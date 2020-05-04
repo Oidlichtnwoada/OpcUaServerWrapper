@@ -14,7 +14,7 @@ class OpcUaServerForRobotController:
         self.opc_ua_server.set_endpoint(f'opc.tcp://{ip_os}:{port_os}/')
         self.opc_ua_server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.opc_ua_server.set_server_name(self.__class__.__name__)
-        self.opc_ua_server.import_xml('./model/Opc.Ua.NodeSet2.xml')
+        self.opc_ua_server.import_xml('./Opc.Ua.NodeSet2.xml')
         self.opc_ua_server.import_xml('./Opc.Ua.Di.NodeSet2.xml')
         self.opc_ua_server.import_xml('./Opc.Ua.Robotics.NodeSet2.xml')
         self.opc_ua_server.import_xml('./Tuw.Auto.MitsubishiElectricRobot.NodeSet2.xml')
