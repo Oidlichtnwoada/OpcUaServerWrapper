@@ -1,5 +1,5 @@
-import time
 from threading import Thread
+from time import sleep
 
 from opcua import Server, ua, uamethod
 
@@ -10,17 +10,14 @@ class OpcUaServerForRobotController:
 
     def __init__(self, ip_os, port_os, ip_rc, port_rc):
         self.rc_client = RCClient(ip_rc, port_rc)
-
         self.opc_ua_server = Server()
         self.opc_ua_server.set_endpoint(f'opc.tcp://{ip_os}:{port_os}/')
         self.opc_ua_server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.opc_ua_server.set_server_name(self.__class__.__name__)
-        self.opc_ua_server.import_xml('/opc_ua_server_for_robot_controller/model/Opc.Ua.NodeSet2.xml')
-        self.opc_ua_server.import_xml('/opc_ua_server_for_robot_controller/model/Opc.Ua.Di.NodeSet2.xml')
-        self.opc_ua_server.import_xml('/opc_ua_server_for_robot_controller/model/Opc.Ua.Robotics.NodeSet2.xml')
-        self.opc_ua_server.import_xml(
-            '/opc_ua_server_for_robot_controller/model/Tuw.Auto.MitsubishiElectricRobot.NodeSet2.xml')
-
+        self.opc_ua_server.import_xml('./model/Opc.Ua.NodeSet2.xml')
+        self.opc_ua_server.import_xml('./Opc.Ua.Di.NodeSet2.xml')
+        self.opc_ua_server.import_xml('./Opc.Ua.Robotics.NodeSet2.xml')
+        self.opc_ua_server.import_xml('./Tuw.Auto.MitsubishiElectricRobot.NodeSet2.xml')
         self.link_method('ns=4;i=1115', self.move_to_safe_position)
         self.link_method('ns=4;i=1069', self.set_override)
         self.link_method('ns=4;i=1075', self.set_parameter)
@@ -28,11 +25,10 @@ class OpcUaServerForRobotController:
         self.link_method('ns=4;i=1105', self.get_most_recent_error)
         self.link_method('ns=4;i=1119', self.stop_immediately)
         self.link_method('ns=4;i=1108', self.reset_error)
-
         self.generate_task_controls()
 
-    def link_method(self, nodeid, method):
-        self.opc_ua_server.link_method(self.opc_ua_server.get_node(nodeid), method)
+    def link_method(self, node_id, method):
+        self.opc_ua_server.link_method(self.opc_ua_server.get_node(node_id), method)
 
     def generate_task_controls(self):
         self.opc_ua_server.get_node('ns=4;i=1038').delete(recursive=True)
@@ -160,4 +156,4 @@ class PeriodicWorker(Thread):
                 self.server.periodic_routine()
             except RobotControllerError:
                 pass
-            time.sleep(10)
+            sleep(10)

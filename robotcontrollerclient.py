@@ -1,4 +1,4 @@
-import time
+from time import sleep
 
 from opcua import ua
 
@@ -32,7 +32,7 @@ class RobotControllerClient:
                     self.scroll_up_to_next_program(robot_number, slot_number)
                 break
             except RobotControllerError:
-                time.sleep(1)
+                sleep(1)
 
     def initialize_all_slots(self, robot_number=1, slot_number=1):
         if not self.is_running(robot_number, slot_number):
@@ -105,7 +105,7 @@ class RobotControllerClient:
 
     def turn_servos_on(self, robot_number=1, slot_number=1):
         self.process_request(f'{robot_number};{slot_number};SRVON')
-        time.sleep(2)
+        sleep(2)
 
     def turn_servos_off(self, robot_number=1, slot_number=1):
         self.process_request(f'{robot_number};{slot_number};SRVOFF', timeout_factor=20)
@@ -119,7 +119,7 @@ class RobotControllerClient:
                 self.process_request(f'{robot_number};{slot_number};CNTLON')
                 break
             except RobotControllerError:
-                time.sleep(1)
+                sleep(1)
 
 
 class RobotControllerError(Exception):

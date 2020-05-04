@@ -1,4 +1,4 @@
-import sys
+from sys import argv, exit
 
 from IPy import IP
 
@@ -16,21 +16,21 @@ def check_port_number(port_number):
         raise ValueError()
 
 
-if len(sys.argv) != 5:
-    sys.exit(USAGE)
+if len(argv) != 5:
+    exit(USAGE)
 
 try:
-    ip_os = str(IP(sys.argv[1]))
-    ip_rc = str(IP(sys.argv[3]))
+    ip_os = str(IP(argv[1]))
+    ip_rc = str(IP(argv[3]))
 except ValueError:
-    sys.exit(INCORRECT_IP)
+    exit(INCORRECT_IP)
 
 try:
-    port_os = int(sys.argv[2])
-    port_rc = int(sys.argv[4])
+    port_os = int(argv[2])
+    port_rc = int(argv[4])
     check_port_number(port_os)
     check_port_number(port_rc)
 except ValueError:
-    sys.exit(INCORRECT_PORT)
+    exit(INCORRECT_PORT)
 
 OpcUaServerForRobotController(ip_os, port_os, ip_rc, port_rc).start()

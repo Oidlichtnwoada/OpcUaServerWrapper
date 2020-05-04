@@ -1,6 +1,6 @@
-import time
 from telnetlib import Telnet
 from threading import Thread, Lock
+from time import sleep
 
 
 class TelnetClient:
@@ -23,14 +23,14 @@ class TelnetClient:
                     self.client = Telnet(self.ip, self.port, self.timeout)
                 break
             except OSError:
-                time.sleep(1)
+                sleep(1)
 
     def send_request_and_return_response(self, req, timeout_factor=1):
         try:
             with self.client_lock:
                 self.client.read_very_eager()
                 self.client.write(req.encode(self.encoding))
-                time.sleep(self.timeout * timeout_factor)
+                sleep(self.timeout * timeout_factor)
                 return self.client.read_very_eager().decode(self.encoding)
         except EOFError:
             return ''
@@ -46,4 +46,4 @@ class ConnectionMaintainer(Thread):
             if self.telnet_client.send_request_and_return_response(self.telnet_client.test_command) == '':
                 self.telnet_client.connect_to_server()
                 self.telnet_client.setup_method()
-            time.sleep(10)
+            sleep(10)
