@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
-           xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions"
-           LastModified="2019-08-18T07:39:51.805Z"
-           xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd"
->
+<UANodeSet LastModified="2020-05-06T13:22:06.746Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <NamespaceUris>
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
         <Uri>http://opcfoundation.org/UA/Robotics/</Uri>
         <Uri>https://auto.tuwien.ac.at/MitsubishiElectricRobot</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://auto.tuwien.ac.at/MitsubishiElectricRobot" PublicationDate="2019-06-13T00:00:00Z"
-               Version="1.00">
-            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z"
-                           Version="1.04"/>
-            <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2019-05-01T00:00:00Z"
-                           Version="1.02"/>
-            <RequiredModel ModelUri="http://opcfoundation.org/UA/Robotics/" PublicationDate="2019-05-06T00:00:00Z"
-                           Version="1.0.0"/>
+        <Model ModelUri="https://auto.tuwien.ac.at/MitsubishiElectricRobot" PublicationDate="2019-06-13T00:00:00Z" Version="1.00">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z" Version="1.05"/>
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2019-05-01T00:00:00Z" Version="1.02"/>
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/Robotics/" PublicationDate="2019-05-06T00:00:00Z" Version="1.0.0"/>
         </Model>
     </Models>
     <Aliases>
@@ -35,11 +27,10 @@
     </Aliases>
     <Extensions>
         <Extension>
-            <si:Generator Product="SiOME" Edition="Standard" Version="1.9.4"/>
+            <si:Generator Product="SiOME" Edition="Standard" Version="2.0.4"/>
         </Extension>
     </Extensions>
-    <UAObject SymbolicName="https___auto_tuwien_ac_at_MitsubishiElectricRobot" NodeId="ns=3;i=1000"
-              BrowseName="3:https://auto.tuwien.ac.at/MitsubishiElectricRobot">
+    <UAObject SymbolicName="https___auto_tuwien_ac_at_MitsubishiElectricRobot" NodeId="ns=3;i=1000" BrowseName="3:https://auto.tuwien.ac.at/MitsubishiElectricRobot">
         <DisplayName>https://auto.tuwien.ac.at/MitsubishiElectricRobot</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
@@ -53,8 +44,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="DateTime" NodeId="ns=3;i=1002" BrowseName="NamespacePublicationDate"
-                ParentNodeId="ns=3;i=1000">
+    <UAVariable DataType="DateTime" NodeId="ns=3;i=1002" BrowseName="NamespacePublicationDate" ParentNodeId="ns=3;i=1000">
         <DisplayName>NamespacePublicationDate</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1000</Reference>
@@ -84,32 +74,28 @@
             <uax:String>1.00</uax:String>
         </Value>
     </UAVariable>
-    <UAVariable DataType="i=256" ValueRank="1" NodeId="ns=3;i=1005" ArrayDimensions="0" BrowseName="StaticNodeIdTypes"
-                ParentNodeId="ns=3;i=1000">
+    <UAVariable DataType="i=256" ValueRank="1" NodeId="ns=3;i=1005" ArrayDimensions="0" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=3;i=1000">
         <DisplayName>StaticNodeIdTypes</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1000</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="i=291" ValueRank="1" NodeId="ns=3;i=1006" ArrayDimensions="0"
-                BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=3;i=1000">
+    <UAVariable DataType="i=291" ValueRank="1" NodeId="ns=3;i=1006" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=3;i=1000">
         <DisplayName>StaticNumericNodeIdRange</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1000</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="String" NodeId="ns=3;i=1007" BrowseName="StaticStringNodeIdPattern"
-                ParentNodeId="ns=3;i=1000">
+    <UAVariable DataType="String" NodeId="ns=3;i=1007" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=3;i=1000">
         <DisplayName>StaticStringNodeIdPattern</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1000</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=3;i=1008" ArrayDimensions="0"
-                BrowseName="DefaultRolePermissions">
+    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=3;i=1008" ArrayDimensions="0" BrowseName="DefaultRolePermissions">
         <DisplayName>DefaultRolePermissions</DisplayName>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1000</Reference>
@@ -258,8 +244,7 @@
     <UAVariable DataType="ns=2;i=18193" NodeId="ns=3;i=1026" BrowseName="2:MotionDeviceCategory">
         <DisplayName>MotionDeviceCategory</DisplayName>
         <Description>The variable MotionDeviceCategory provides the kind of motion device defined by
-            MotionDeviceCategoryEnumeration based on ISO 8373.
-        </Description>
+            MotionDeviceCategoryEnumeration based on ISO 8373.</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1014</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -310,8 +295,7 @@
     </UAVariable>
     <UAVariable DataType="Double" NodeId="ns=3;i=1033" BrowseName="2:SpeedOverride">
         <DisplayName>SpeedOverride</DisplayName>
-        <Description>SpeedOverride provides the current speed setting in percent of programmed speed (0 - 100%).
-        </Description>
+        <Description>SpeedOverride provides the current speed setting in percent of programmed speed (0 - 100%).</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1027</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -321,8 +305,7 @@
         <DisplayName>EmergencyStop</DisplayName>
         <Description>The EmergencyStop variable is TRUE if one or more of the emergency stop functions in the robot
             system are active, FALSE otherwise. If the EmergencyStopFunctions object is provided, then the value of this
-            variable is TRUE if one or more of the listed emergency stop functions are active.
-        </Description>
+            variable is TRUE if one or more of the listed emergency stop functions are active.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1031</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -331,8 +314,7 @@
     <UAVariable DataType="ns=2;i=3006" NodeId="ns=3;i=1035" BrowseName="2:OperationalMode">
         <DisplayName>OperationalMode</DisplayName>
         <Description>The OperationalMode variable provides information about the current operational mode. Allowed
-            values are described in OperationalModeEnumeration, see ISO 10218-1:2011 Ch.5.7 Operational Modes.
-        </Description>
+            values are described in OperationalModeEnumeration, see ISO 10218-1:2011 Ch.5.7 Operational Modes.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1031</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -342,8 +324,7 @@
         <DisplayName>ProtectiveStop</DisplayName>
         <Description>The ProtectiveStop variable is TRUE if one or more of the enabled protective stop functions in the
             system are active, FALSE otherwise. If the ProtectiveStopFunctions object is provided, then the value of
-            this variable is TRUE if one or more of the listed protective stop functions are enabled and active.
-        </Description>
+            this variable is TRUE if one or more of the listed protective stop functions are enabled and active.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1031</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -438,8 +419,7 @@
     <UAVariable DataType="Boolean" NodeId="ns=3;i=1049" BrowseName="2:TaskProgramLoaded">
         <DisplayName>TaskProgramLoaded</DisplayName>
         <Description>The TaskProgramLoaded variable is TRUE if a task program is loaded in the task control, FALSE
-            otherwise.
-        </Description>
+            otherwise.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1045</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -506,8 +486,7 @@
     <UAVariable DataType="Double" NodeId="ns=3;i=1058" BrowseName="2:MotorTemperature">
         <DisplayName>MotorTemperature</DisplayName>
         <Description>The motor temperature provides the temperature of the motor. If there is no temperature sensor the
-            value is set to \"null\".
-        </Description>
+            value is set to \"null\".</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1054</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
@@ -537,8 +516,7 @@
     <UAVariable DataType="Boolean" NodeId="ns=3;i=1062" BrowseName="2:Active" ParentNodeId="ns=3;i=1061">
         <DisplayName>Active</DisplayName>
         <Description>The Active variable is TRUE if this particular emergency stop function is active, e.g. that the
-            emergency stop button is pressed, FALSE otherwise.
-        </Description>
+            emergency stop button is pressed, FALSE otherwise.</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1061</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -547,8 +525,7 @@
     <UAVariable DataType="String" NodeId="ns=3;i=1063" BrowseName="2:Name" ParentNodeId="ns=3;i=1061">
         <DisplayName>Name</DisplayName>
         <Description>The Name of the EmergencyStopFunctionType provides a manufacturer-specific emergency stop function
-            identifier within the safety system.
-        </Description>
+            identifier within the safety system.</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1061</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -783,8 +760,7 @@
     </UAMethod>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1091" ArrayDimensions="0" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
-        <Description>the definition of the input argument of method 3:EmergencyStopFunctionType.4:CallMethod
-        </Description>
+        <Description>the definition of the input argument of method 3:EmergencyStopFunctionType.4:CallMethod</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1090</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -793,8 +769,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1092" ArrayDimensions="0" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 3:EmergencyStopFunctionType.4:CallMethod
-        </Description>
+        <Description>the definition of the output arguments of method 3:EmergencyStopFunctionType.4:CallMethod</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1090</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -810,8 +785,7 @@
     </UAMethod>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1094" ArrayDimensions="0" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
-        <Description>the definition of the input argument of method 3:ProtectiveStopFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the input argument of method 3:ProtectiveStopFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1093</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -820,8 +794,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1095" ArrayDimensions="0" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 3:ProtectiveStopFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the output arguments of method 3:ProtectiveStopFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1093</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -837,8 +810,7 @@
     </UAMethod>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1097" ArrayDimensions="0" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
-        <Description>the definition of the input argument of method 4:MoveToSafeStateFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the input argument of method 4:MoveToSafeStateFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1096</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -847,8 +819,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1098" ArrayDimensions="0" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 4:MoveToSafeStateFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the output arguments of method 4:MoveToSafeStateFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1096</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -864,8 +835,7 @@
     </UAMethod>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1100" ArrayDimensions="0" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
-        <Description>the definition of the input argument of method 4:ResetErrorFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the input argument of method 4:ResetErrorFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1099</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -874,8 +844,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1101" ArrayDimensions="0" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 4:ResetErrorFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the output arguments of method 4:ResetErrorFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1099</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -904,8 +873,7 @@
     </UAMethod>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1109" ArrayDimensions="0" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
-        <Description>the definition of the input argument of method 4:ResetErrorFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the input argument of method 4:ResetErrorFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1108</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -913,8 +881,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1110" ArrayDimensions="0" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 4:ResetErrorFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the output arguments of method 4:ResetErrorFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1108</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -942,8 +909,7 @@
     </UAMethod>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1116" ArrayDimensions="0" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
-        <Description>the definition of the input argument of method 4:MoveToSafeStateFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the input argument of method 4:MoveToSafeStateFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1115</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -951,8 +917,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1117" ArrayDimensions="0" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 4:MoveToSafeStateFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the output arguments of method 4:MoveToSafeStateFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1115</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -966,8 +931,7 @@
     </UAMethod>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1120" ArrayDimensions="0" BrowseName="InputArguments">
         <DisplayName>InputArguments</DisplayName>
-        <Description>the definition of the input argument of method 3:EmergencyStopFunctionType.4:CallMethod
-        </Description>
+        <Description>the definition of the input argument of method 3:EmergencyStopFunctionType.4:CallMethod</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1119</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -975,8 +939,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1121" ArrayDimensions="0" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 3:EmergencyStopFunctionType.4:CallMethod
-        </Description>
+        <Description>the definition of the output arguments of method 3:EmergencyStopFunctionType.4:CallMethod</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1119</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1013,8 +976,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1081" ArrayDimensions="0" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 4:ErrorLogFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the output arguments of method 4:ErrorLogFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1079</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1059,8 +1021,7 @@
     </UAVariable>
     <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1112" ArrayDimensions="1" BrowseName="OutputArguments">
         <DisplayName>OutputArguments</DisplayName>
-        <Description>the definition of the output arguments of method 4:ErrorLogFunctionType.4:CallFunction
-        </Description>
+        <Description>the definition of the output arguments of method 4:ErrorLogFunctionType.4:CallFunction</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1105</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1216,8 +1177,7 @@
     <UAVariable DataType="String" NodeId="ns=3;i=1123" BrowseName="3:Name">
         <DisplayName>Name</DisplayName>
         <Description>The Name of the ResetErrorFunctionType provides a manufacturer-specific reset error function
-            identifier within the safety system.
-        </Description>
+            identifier within the safety system.</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1083</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1227,8 +1187,7 @@
     <UAVariable DataType="String" NodeId="ns=3;i=1124" BrowseName="3:Name">
         <DisplayName>Name</DisplayName>
         <Description>The Name of the MoveToSafeStateFunctionType provides a manufacturer-specific move to safe state
-            function identifier within the safety system.
-        </Description>
+            function identifier within the safety system.</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1084</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1238,8 +1197,7 @@
     <UAVariable DataType="String" NodeId="ns=3;i=1125" BrowseName="3:Name">
         <DisplayName>Name</DisplayName>
         <Description>The Name of the ErrorLogFunctionType provides a manufacturer-specific error log function identifier
-            within the safety system.
-        </Description>
+            within the safety system.</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1065</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1249,8 +1207,7 @@
     <UAVariable DataType="String" NodeId="ns=3;i=1126" BrowseName="3:Name">
         <DisplayName>Name</DisplayName>
         <Description>The Name of the ErrorLogFunctionType provides a manufacturer-specific error log function identifier
-            within the safety system.
-        </Description>
+            within the safety system.</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1103</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1262,8 +1219,7 @@
     <UAVariable DataType="String" NodeId="ns=3;i=1127" BrowseName="3:Name">
         <DisplayName>Name</DisplayName>
         <Description>The Name of the MoveToSafeStateFunctionType provides a manufacturer-specific move to safe state
-            function identifier within the safety system.
-        </Description>
+            function identifier within the safety system.</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1113</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1275,8 +1231,7 @@
     <UAVariable DataType="String" NodeId="ns=3;i=1128" BrowseName="3:Name">
         <DisplayName>Name</DisplayName>
         <Description>The Name of the ResetErrorFunctionType provides a manufacturer-specific reset error function
-            identifier within the safety system.
-        </Description>
+            identifier within the safety system.</Description>
         <References>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1102</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
@@ -1284,5 +1239,317 @@
         <Value>
             <uax:String>ResetError</uax:String>
         </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=3;i=1066" BrowseName="3:MethodSet">
+        <DisplayName>MethodSet</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1013</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAMethod NodeId="ns=3;i=1067" BrowseName="3:ReadInput">
+        <DisplayName>ReadInput</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1066</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1087" ArrayDimensions="1" BrowseName="InputArguments">
+        <DisplayName>InputArguments</DisplayName>
+        <Description>the definition of the input argument of method 3:MethodSet.3:ReadInput</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1067</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Index</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=5</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description>
+                                <uax:Text>the index of the input pin</uax:Text>
+                            </uax:Description>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1089" ArrayDimensions="1" BrowseName="OutputArguments">
+        <DisplayName>OutputArguments</DisplayName>
+        <Description>the definition of the output arguments of method 3:MethodSet.3:ReadInput</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1067</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Value</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=5</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAMethod NodeId="ns=3;i=1111" BrowseName="3:WriteOutput">
+        <DisplayName>WriteOutput</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1066</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1118" ArrayDimensions="2" BrowseName="InputArguments">
+        <DisplayName>InputArguments</DisplayName>
+        <Description>the definition of the input argument of method 3:MethodSet.3:WriteOutput</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1111</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Index</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=5</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Value</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=5</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1129" ArrayDimensions="0" BrowseName="OutputArguments">
+        <DisplayName>OutputArguments</DisplayName>
+        <Description>the definition of the output arguments of method 3:MethodSet.3:WriteOutput</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1111</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=3;i=1130" BrowseName="3:MethodSet">
+        <DisplayName>MethodSet</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1014</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAMethod NodeId="ns=3;i=1131" BrowseName="3:OpenGripper">
+        <DisplayName>OpenGripper</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1130</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1132" ArrayDimensions="0" BrowseName="InputArguments">
+        <DisplayName>InputArguments</DisplayName>
+        <Description>the definition of the input argument of method 3:MethodSet.3:OpenGripper</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1131</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1133" ArrayDimensions="0" BrowseName="OutputArguments">
+        <DisplayName>OutputArguments</DisplayName>
+        <Description>the definition of the output arguments of method 3:MethodSet.3:OpenGripper</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1131</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAMethod NodeId="ns=3;i=1134" BrowseName="3:CloseGripper">
+        <DisplayName>CloseGripper</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1130</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1135" ArrayDimensions="0" BrowseName="InputArguments">
+        <DisplayName>InputArguments</DisplayName>
+        <Description>the definition of the input argument of method 3:MethodSet.3:CloseGripper</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1134</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1136" ArrayDimensions="0" BrowseName="OutputArguments">
+        <DisplayName>OutputArguments</DisplayName>
+        <Description>the definition of the output arguments of method 3:MethodSet.3:CloseGripper</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1134</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAMethod NodeId="ns=3;i=1137" BrowseName="3:Move">
+        <DisplayName>Move</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=1130</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1138" ArrayDimensions="6" BrowseName="InputArguments">
+        <DisplayName>InputArguments</DisplayName>
+        <Description>the definition of the input argument of method 3:MethodSet.3:Move</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1137</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+        <Value>
+            <uax:ListOfExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>X</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=50</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Y</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=50</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>Z</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=50</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>A</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=50</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>B</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=50</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>C</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=50</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions/>
+                            <uax:Description/>
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="i=296" ValueRank="1" NodeId="ns=3;i=1139" ArrayDimensions="0" BrowseName="OutputArguments">
+        <DisplayName>OutputArguments</DisplayName>
+        <Description>the definition of the output arguments of method 3:MethodSet.3:Move</Description>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=1137</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
     </UAVariable>
 </UANodeSet>
