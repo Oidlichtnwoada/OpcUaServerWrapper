@@ -1,0 +1,51 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Zielsetzung}{4}{section.1}
+\contentsline {section}{\numberline {2}\IeC {\"U}bersicht}{4}{section.2}
+\contentsline {section}{\numberline {3}Aufbau Target 12}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Station 1: Verteilen}{5}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Module}{5}{subsubsection.3.1.1}
+\contentsline {paragraph}{\numberline {3.1.1.1}Stapelmagazin}{5}{paragraph.3.1.1.1}
+\contentsline {paragraph}{\numberline {3.1.1.2}Umsetzen}{5}{paragraph.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2}Sensoren/Aktoren}{5}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Station 2: Pr\IeC {\"u}fen}{6}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Module}{6}{subsubsection.3.2.1}
+\contentsline {paragraph}{\numberline {3.2.1.1}Erkennen}{6}{paragraph.3.2.1.1}
+\contentsline {paragraph}{\numberline {3.2.1.2}Heben und Schieben}{6}{paragraph.3.2.1.2}
+\contentsline {paragraph}{\numberline {3.2.1.3}Messen}{6}{paragraph.3.2.1.3}
+\contentsline {paragraph}{\numberline {3.2.1.4}Rutsche}{6}{paragraph.3.2.1.4}
+\contentsline {subsubsection}{\numberline {3.2.2}Sensoren/Aktoren}{7}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}SPS Komponenten}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Aufbau Target 34}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Station 3: Bearbeiten}{9}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Module}{9}{subsubsection.4.1.1}
+\contentsline {paragraph}{\numberline {4.1.1.1}Rundschalttisch}{9}{paragraph.4.1.1.1}
+\contentsline {paragraph}{\numberline {4.1.1.2}Bohren}{9}{paragraph.4.1.1.2}
+\contentsline {paragraph}{\numberline {4.1.1.3}Bohrlochpr\IeC {\"u}fung}{10}{paragraph.4.1.1.3}
+\contentsline {subsubsection}{\numberline {4.1.2}Sensoren/Aktoren}{10}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Station 4: Handhaben}{10}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Module}{10}{subsubsection.4.2.1}
+\contentsline {paragraph}{\numberline {4.2.1.1}Schwenkarm}{10}{paragraph.4.2.1.1}
+\contentsline {paragraph}{\numberline {4.2.1.2}Rutsche}{11}{paragraph.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.2}Sensoren/Aktoren}{11}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}SPS Komponenten}{12}{subsection.4.3}
+\contentsline {section}{\numberline {5}Aufbau Target 56}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Station 5: Puffern}{14}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Module}{14}{subsubsection.5.1.1}
+\contentsline {paragraph}{\numberline {5.1.1.1}F\IeC {\"o}rderband}{14}{paragraph.5.1.1.1}
+\contentsline {paragraph}{\numberline {5.1.1.2}Vereinzelung}{14}{paragraph.5.1.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2}Sensoren/Aktoren}{15}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Station 6: Sortieren}{15}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Module}{15}{subsubsection.5.2.1}
+\contentsline {paragraph}{\numberline {5.2.1.1}Sortierband}{15}{paragraph.5.2.1.1}
+\contentsline {paragraph}{\numberline {5.2.1.2}Rutsche}{15}{paragraph.5.2.1.2}
+\contentsline {subsubsection}{\numberline {5.2.2}Sensoren/Aktoren}{16}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}SPS Komponenten}{16}{subsection.5.3}
+\contentsline {section}{\numberline {6}Aufbau Target Roboter}{18}{section.6}
+\contentsline {subsection}{\numberline {6.1}Station Roboter}{18}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Module}{18}{subsubsection.6.1.1}
+\contentsline {paragraph}{\numberline {6.1.1.1}Roboter}{18}{paragraph.6.1.1.1}
+\contentsline {paragraph}{\numberline {6.1.1.2}Roboter Handling}{18}{paragraph.6.1.1.2}
+\contentsline {paragraph}{\numberline {6.1.1.3}Roboter Assembly}{19}{paragraph.6.1.1.3}
+\contentsline {subsubsection}{\numberline {6.1.2}Sensoren/Aktoren}{19}{subsubsection.6.1.2}
+\contentsline {subsection}{\numberline {6.2}Roboter Steuerungs Komponenten}{20}{subsection.6.2}
+\contentsline {section}{\numberline {7}System Netzwerk Struktur}{21}{section.7}
