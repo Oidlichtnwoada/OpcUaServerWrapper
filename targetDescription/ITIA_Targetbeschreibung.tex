@@ -978,7 +978,7 @@ Eine Rutsche dient als Ablage und Entnahmespunkt für fertiggestellte Bauteile.
 		\end{tabular} \\
 	\end{tabular}
 \end{center}
-Sensoren werden über den Befehl \textbf{M\_In(<Index>)} in MELFA-BASIC V, bzw. in OPC UA über die Methode \textbf{readInput(<Index>)} mit der NodeId \textbf{ns=4;i=1075}, gelesen.
+Sensoren werden über den Befehl \textbf{M\_In(<Index>)} in MELFA-BASIC V, bzw. in OPC UA über die Methode \textbf{readInput(<Index>)} mit der NodeId \textbf{ns=?;i=?}, gelesen.
 \begin{center}
 	\rowcolors{2}{white}{gray!25}
 	\setlength\extrarowheight{4pt}
@@ -1007,7 +1007,7 @@ Sensoren werden über den Befehl \textbf{M\_In(<Index>)} in MELFA-BASIC V, bzw. 
 		\hline
 	\end{tabularx}
 \end{center}
-Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<value>} in MELFA-BASIC V, bzw. in OPC UA über den Befehl \textbf{writeOutput(<Index>,<value>)} mit der NodeId \textbf{ns=4;i=1075}, beschrieben.
+Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<value>} in MELFA-BASIC V, bzw. in OPC UA über den Befehl \textbf{writeOutput(<Index>,<value>)} mit der NodeId \textbf{ns=?;i=?}, beschrieben.
 \begin{center}
 	\rowcolors{2}{white}{gray!25}
 	\setlength\extrarowheight{4pt}
@@ -1049,11 +1049,11 @@ Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<value>} in MELFA-BASIC 
 		\multicolumn{3}{|c|}{\bf \color{white} \large Gripper}\\
 		\hline\hline
 		\rowcolor{gray!80}
-		\bf Melfa-Command & \bf OPC UA & \bf Beschreibung\\
+		\bf MB5-Command & \bf OPC UA & \bf Beschreibung\\
 		\hline\hline
-		Mov(X,Y,Z,A,B,C) & move(X,Y,Z,A,B,C) & Modul Roboter (Hand) - Position, Rotation anfahren\\
-		HOpen 1 & gripperOpen() & Modul Roboter (Hand) - Gripper öffnen\\
-		HClose 1 & gripperClose() & Modul Roboter (Hand) - Gripper schließen\\
+		Mov(X,Y,Z,A,B,C) & move(X,Y,Z,A,B,C): \textbf{ns=?;i=?} & Modul Roboter (Hand) - Position, Rotation anfahren\\
+		HOpen 1 & gripperOpen(): \textbf{ns=?;i=?} & Modul Roboter (Hand) - Gripper öffnen\\
+		HClose 1 & gripperClose(): \textbf{ns=?;i=?} & Modul Roboter (Hand) - Gripper schließen\\
 		\hline
 	\end{tabularx}
 \end{center}

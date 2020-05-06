@@ -121,6 +121,21 @@ class RobotControllerClient:
             except RobotControllerError:
                 sleep(1)
 
+    def read_input(self, index, robot_number=1, slot_number=1):
+        return self.process_request(f'{robot_number};{slot_number};IN{index}')[0]
+
+    def write_output(self, index, value, robot_number=1, slot_number=1):
+        self.process_request(f'{robot_number};{slot_number};OUT={index};{value:04x}')
+
+    def open_gripper(self, hand_number=1, robot_number=1, slot_number=1):
+        self.process_request(f'{robot_number};{slot_number};HNDON{hand_number}')
+
+    def close_gripper(self, hand_number=1, robot_number=1, slot_number=1):
+        self.process_request(f'{robot_number};{slot_number};HNDOFF{hand_number}')
+
+    def move(self, x, y, z, a, b, c, robot_number=1, slot_number=1):
+        self.process_request(f'{robot_number};{slot_number};EXEC2=MOV ({x},{y},{z},{a},{b},{c})')
+
 
 class RobotControllerError(Exception):
     def __init__(self, status_code, error_code=None):
