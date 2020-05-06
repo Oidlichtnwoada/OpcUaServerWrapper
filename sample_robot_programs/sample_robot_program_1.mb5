@@ -1,0 +1,380 @@
+1 def pos GBIG
+2 def pos GBIGCAP
+3 def pos GBIGLOW
+4 def pos GCENTER
+5 def pos GCENTERL
+6 def pos GCENTCAP
+7 def pos GSMALL
+8 def pos GSMALLLO
+9 def pos GVert
+10 '
+11 'X Y Z Y P R
+12 GBIG = (39.97,0,127,-180,-0,90)
+13 GBIGCAP = (39.69,-0.01,108.38,-180,-0,90)
+14 GBIGLOW = (39.97,0,124.50,-180,-0,90)
+15 GCENTER = (0,-0,129,-180,-0,90)
+16 GCENTERL = (0,-0,126.5,-180,-0,90)
+17 GCENTCAP = (1.49,-0.13,110.55,-180,-0,90)
+18 GSMALL = (-41.5,0.06,122.83,-180,-0,90)
+19 GSMALLLO = (-41.5,0.07,109.95,-180,-0,90)
+20 GVert = (69,0,89,90,-0,90)
+21 
+22 def pos prot
+23 def pos pori
+24 Def Pos pact
+25 Def Io colorSensor=Bit,900
+26 Def Io PARTAV=Bit,4
+27 Def Io foundHole=Bit,3
+28 
+29 OVRD 10
+30 While 1
+31 	Tool GSMALL
+32 	Cnt 0
+33 	'wait unitl a part is available
+34 	While PARTAV=0
+35 	WEnd
+36 	HOpen 1
+37 	'check color
+38 
+39 	Dly 1
+40 	Mov P50,40
+41 	Dly 1
+42 	Mvs P50
+43 	Dly 1
+44 	Def Inte isColor
+45 	isColor% = colorSensor
+46 	Dly 1
+47 	Mvs P50,40
+48 	Dly 1
+49 	'move to chute an grab it with big gripper
+50 	If(isColor% = 1) Then
+51 	 Tool GBIG
+52 	Else
+53 	 Tool GBIGLOW
+54 	EndIf
+55 	Mov P14,40
+56 	Mvs P14
+57 	Dly 1
+58 	HClose 1
+59 	Dly 1
+60 	'move to assembly socket
+61 	Mvs P14,40
+62 	Mov P10, 40
+63 	Mvs P10
+64 	Dly 1
+65 	HOpen 1
+66 	Dly 1
+67 	Mvs P10,20
+68 	'pick up with middle gripper
+69 	If(isColor% = 1) Then
+70 	 Tool GCENTER
+71 	Else
+72 	 Tool GCENTERL
+73 	EndIf
+74 	Mov P10, 40
+75 	Mvs P10
+76 	Dly 1
+77 	HClose 1
+78 	Dly 1
+79 	Mvs P10,40
+80 	'move to scanning place and find hole in bottom
+81 	Mov P16, 40
+82 	pact = P16
+83 	Mvs pact
+84 	Dly 1
+85 
+86 	prot = (+0.00,+0.00,+0.00,+0.00,+0.00,+1.00)
+87 	pori = (+0.00,+0.00,+0.00,+0.00,+0.00,+0.00)
+88 	'find hole
+89 	While foundHole=1
+90 	 pori=pori+prot
+91 	 Mov P16+pori
+92 	WEnd
+93 	Dly 1
+94 	While foundHole=0
+95 	 pori=pori+prot
+96 	 Mov P16+pori
+97 	WEnd
+98 	Dly 1
+99 	pori=pori-(+0.00,+0.00,+0.00,+0.00,+0.00,+10.00)
+100 	Mvs P16+pori
+101 	Dly 1
+102 	Mov P11+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00),200
+103 	Dly 5
+104 	Mvs P11+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00)
+105 	Dly 1
+106 	HOpen 1
+107 	Dly 1
+108 	Mvs P11+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00),160
+109 	Dly 1
+110 	'take piston
+111 	Tool GSMALL
+112 	'check if first piston is avaliable
+113 	If (isColor% = 1) Then
+114 	 Dly 1
+115 	 Mov P40,40
+116 	 Dly 1
+117 	 Mvs P40
+118 	 Dly 1
+119 	 If (colorSensor = 1) Then
+120 	  Mvs P40,40
+121 	  Dly 1
+122 	  Mov P30,40
+123 	  Mvs P30
+124 	  Dly 1
+125 	  HClose 1
+126 	  Dly 1
+127 	  Mvs P30,40
+128 	  Dly 1
+129 	 Else
+130 	  Mov P41,40
+131 	  Dly 1
+132 	  Mvs P41
+133 	  Dly 1
+134 	  If (colorSensor = 1) Then
+135 	   Mvs P41,40
+136 	   Dly 1
+137 	   Mov P31,40
+138 	   Mvs P31
+139 	   Dly 1
+140 	   HClose 1
+141 	   Dly 1
+142 	   Mvs P31,40
+143 	   Dly 1
+144 	  Else
+145 	   Mov P42,40
+146 	   Dly 1
+147 	   Mvs P42
+148 	   Dly 1
+149 	   If (colorSensor = 1) Then
+150 	    Mvs P42,40
+151 	    Dly 1
+152 	    Mov P32,40
+153 	    Mvs P32
+154 	    Dly 1
+155 	    HClose 1
+156 	    Dly 1
+157 	    Mvs P32,40
+158 	    Dly 1
+159 	   Else
+160 	    Mov P43,40
+161 	    Dly 1
+162 	    Mvs P43
+163 	    Dly 1
+164 	    If (colorSensor = 1) Then
+165 	     Mvs P43,40
+166 	     Dly 1
+167 	     Mov P33,40
+168 	     Mvs P33
+169 	     Dly 1
+170 	     HClose 1
+171 	     Dly 1
+172 	     Mvs P33,40
+173 	     Dly 1
+174 	    Else
+175 	     While(1)
+176 	     'TODO What do do?
+177 	     WEnd
+178 	    EndIf
+179 	   EndIf
+180 	  EndIf
+181 	 EndIf
+182 	Else
+183 	'schawarzes Werkstück
+184 	 Dly 1
+185 	 Mov P44,40
+186 	 Dly 1
+187 	 Mvs P44
+188 	 Dly 1
+189 	 If (colorSensor = 1) Then
+190 	  Mvs P44,40
+191 	  Dly 1
+192 	  Mov P34,40
+193 	  Mvs P34
+194 	  Dly 1
+195 	  HClose 1
+196 	  Dly 1
+197 	  Mvs P34,40
+198 	  Dly 1
+199 	 Else
+200 	  Mov P45,40
+201 	  Dly 1
+202 	  Mvs P45
+203 	  Dly 1
+204 	  If (colorSensor = 1) Then
+205 	   Mvs P45,40
+206 	   Dly 1
+207 	   Mov P35,40
+208 	   Mvs P35
+209 	   Dly 1
+210 	   HClose 1
+211 	   Dly 1
+212 	   Mvs P35,40
+213 	   Dly 1
+214 	  Else
+215 	   Mov P46,40
+216 	   Dly 1
+217 	   Mvs P46
+218 	   Dly 1
+219 	   If (colorSensor = 1) Then
+220 	    Mvs P46,40
+221 	    Dly 1
+222 	    Mov P36,40
+223 	    Mvs P36
+224 	    Dly 1
+225 	    HClose 1
+226 	    Dly 1
+227 	    Mvs P36,40
+228 	    Dly 1
+229 	   Else
+230 	    Mov P47,40
+231 	    Dly 1
+232 	    Mvs P47
+233 	    Dly 1
+234 	    If (colorSensor = 1) Then
+235 	     Mvs P47,40
+236 	     Dly 1
+237 	     Mov P37,40
+238 	     Mvs P37
+239 	     Dly 1
+240 	     HClose 1
+241 	     Dly 1
+242 	     Mvs P37,40
+243 	     Dly 1
+244 	    Else
+245 	     While(1)
+246 	     'TODO What do do?
+247 	     WEnd
+248 	    EndIf
+249 	   EndIf
+250 	  EndIf
+251 	 EndIf
+252 	EndIf
+253 	'put it in the workpice
+254 	Mov P18,50
+255 	Dly 1
+256 	Mvs P18
+257 	Dly 1
+258 	HOpen 1
+259 	Dly 1
+260 	Mvs P18,80
+261 	'output a spring
+262 	Def Io spring=Bit,8
+263 	spring = 1
+264 	'move to spring and grab it
+265 	Tool GSMALLLO
+266 	Mov P19,40
+267 	Dly 1
+268 	Mvs P19
+269 	Dly 1
+270 	HClose 1
+271 	Dly 1
+272 	Mvs P19,40
+273 	Dly 1
+274 	spring = 0
+275 	'put spring in workpice
+276 	Tool GSMALL
+277 	Mov P18,50
+278 	Dly 1
+279 	Mvs P18
+280 	Dly 1
+281 	HOpen 1
+282 	Dly 1
+283 	Mvs P18,80
+284 	'output cap
+285 	Def Io cap=Bit,12
+286 	cap = 1
+287 	Dly 1
+288 	cap=0
+289 	'set tool to big grabber
+290 	TOOL GBIGCAP
+291 	'move to cab an grab it
+292 	Mov P20,40
+293 	Dly 1
+294 	Mvs P20
+295 	Dly 1
+296 	HClose 1
+297 	Dly 1
+298 	Mvs P20,40
+299 	Dly 1
+300 	'move to big nop
+301 	Mov P21,40
+302 	Dly 1
+303 	Mvs P21
+304 	Dly 1
+305 	HOpen 1
+306 	Dly 1
+307 	Mvs P21,40
+308 	'change to center tool
+309 	Tool (+0.00,+0.00,+110.55,-180.00,+0.00,+90.00)
+310 	'grab it with the center tool
+311 	Mov P21,40
+312 	Dly 1
+313 	Mvs P21
+314 	Dly 1
+315 	HClose 1
+316 	Dly 1
+317 	'find nops
+318 	prot = (+0.00,+0.00,+0.00,+0.00,+0.00,+1.00)
+319 	pori = (+0.00,+0.00,+0.00,+0.00,+0.00,+0.00)
+320 	pact = (+0.00,+0.00,+0.00,+0.00,+0.00,+0.00)
+321 	While(foundHole = 0)
+322 	 pori = pori - prot
+323 	 Mvs P21+pori
+324 	WEnd
+325 	While(foundHole = 1)
+326 	 pori = pori - prot
+327 	 Mvs P21+pori
+328 	WEnd
+329 	Dly 1
+330 	'OVRD 5
+331 	'move up and to workpice
+332 	If (isColor% = 0) Then
+333 	 'schwarz
+334 	 pori = pori + (+0.00,+0.00,-2.50,+0.00,+0.00,+0.00)
+335 	EndIf
+336 	'OVRD 10
+337 	Dly 1
+338 	Mvs P21+pori,40
+339 	'Dly 1
+340 	'OVRD 20
+341 	Dly 1
+342 	Mvs P18+pori,40
+343 	Dly 1
+344 	Mvs P18+pori
+345 	Dly 1
+346 	Mvs P18+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,-75.00)
+347 	Dly 1
+348 	HOpen 1
+349 	Dly 1
+350 	Mvs P18+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,-75.00),40
+351 	Dly 1
+352 	'set tool to big grabber
+353 	If (isColor% = 1) Then
+354 	 Tool (+40.00,+0.00,+108.38,-180.00,+0.00,+90.00)
+355 	Else
+356 	 Tool (+40.00,+0.00,+105.88,-180.00,+0.00,+90.00)
+357 	EndIf
+358 	Dly 1
+359 	Mvs P18+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00),40
+360 	Dly 1
+361 	Mvs P18+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00)
+362 	Dly 1
+363 	HClose 1
+364 	Dly 1
+365 	Mvs P_Curr,250
+366 	Dly 1
+367 	Mov P15
+368 	Mov P23,50
+369 	Dly 1
+370 	Mvs P23
+371 	Dly 1
+372 	HOpen 1
+373 	Dly 1
+374 	Mov P23,100
+375 	Dly 1
+376 	Mov P15
+377 	Dly 1
+378 	WEnd
+379 End
+380 

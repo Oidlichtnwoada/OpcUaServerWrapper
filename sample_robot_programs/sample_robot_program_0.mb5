@@ -1,0 +1,302 @@
+1 Def Pos prot
+2 Def Pos pori
+3 Def Pos pact
+4 Def Io colorSensor=Bit,900
+5 Def Io PARTAV=Bit,4
+6 Def Io foundHole=Bit,3
+7 def pos GBIG
+8 def pos GBIGCAP
+9 def pos GBIGLOW
+10 def pos GCENTER
+11 def pos GCENTERL
+12 def pos GCENTCAP
+13 def pos GSMALL
+14 def pos GSMALLLO
+15 def pos GVert
+16 '
+17 'X Y Z Y P R
+18 GBIG = (39.97,0,127,-180,-0,90)
+19 GBIGCAP = (39.69,-0.01,108.38,-180,-0,90)
+20 GBIGLOW = (39.97,0,124.50,-180,-0,90)
+21 GCENTER = (0,-0,129,-180,-0,90)
+22 GCENTERL = (0,-0,126.5,-180,-0,90)
+23 GCENTCAP = (1.49,-0.13,110.55,-180,-0,90)
+24 GSMALL = (-41.5,0.06,122.83,-180,-0,90)
+25 GSMALLLO = (-41.5,0.07,109.95,-180,-0,90)
+26 GVert = (69,0,89,90,-0,90)
+27 Ovrd 20
+28 While 1
+29  Tool GBIG
+30  Mov P15 'HOME
+31  Dly 1
+32  While PARTAV = 0 'Warten auf zusammengebautes Werkstück
+33  WEnd
+34  HOpen 1
+35  'output spring piston
+36   Def Io spring=Bit,8
+37   spring = 1
+38  'farbe checken
+39  Dly 1
+40  Tool GSMALL
+41  Mov P50,40
+42  Dly 1
+43  Mvs P50
+44  Dly 1
+45  Def Inte isColor
+46  isColor% = colorSensor
+47  Dly 1
+48  Mvs P50,40
+49   Dly 1
+50   'zur rutsche fahren und mit dem hineren greifer abholen
+51   If(isColor% = 1) Then
+52    Tool GBIG
+53   Else
+54    Tool GBIGLOW
+55   EndIf
+56  GoSub *TSLIDE 'TAKE From SLIDE
+57  Dly 1
+58  GoSub *PWBENH 'Put on work bench high
+59  Dly 1
+60  GoSub *TWBENH 'TAKE from work bench high
+61  Dly 1
+62  GoSub *FINDHOLE 'go to sensor and turn until a hole is found
+63  Dly 1
+64  GoSub *DECAP 'remove cap from WE
+65  Dly 1
+66  GoSub *RSPRING 'remove spring
+67  Dly 1
+68  GoSub *ISPRING 'insert spring
+69  Dly 1
+70  GoSub *MOCAP 'mount cap from WE
+71  Dly 1
+72  GoSub *PSLIDE 'put on slide
+73  Dly 1
+74 WEnd
+75 End
+76 'TAKE from SLIDE
+77 *TSLIDE
+78  Tool GBIG
+79   Mov P14,40
+80   Dly 1
+81   Mvs P14,2 'Cap added
+82   Dly 1
+83   HClose 1
+84   Dly 1
+85   Mvs P14,40
+86   Dly 1
+87 Return
+88 'Put on work bench high
+89 *PWBENH
+90  Tool GBIG
+91   Mov P10,40
+92   Dly 1
+93   Mvs P10,2 'Cap added
+94   Dly 1
+95   HOpen 1
+96   Dly 1
+97   Mvs P10,40
+98   Dly 1
+99 Return
+100 'Take from work bench high
+101 *TWBENH
+102  Tool GCENTER
+103   Mov P10,40
+104   Dly 1
+105   Mvs P10,2 'Cap added
+106   Dly 1
+107   HClose 1
+108   Dly 1
+109   Mvs P10,40
+110   Dly 1
+111 Return
+112 *FINDHOLE
+113  Tool GCENTER
+114  Mov P16, 40
+115  pact = P16
+116  Mvs pact,2 'Cap added
+117  Dly 1
+118   prot = (+0.00,+0.00,+0.00,+0.00,+0.00,+1.00)
+119   pori = (+0.00,+0.00,+0.00,+0.00,+0.00,+0.00)
+120   'lochposition finden
+121   While foundHole=1
+122    pori=pori+prot
+123    Mov P16+pori,2 'Cap added
+124   WEnd
+125   Dly 1
+126   While foundHole=0
+127    pori=pori+prot
+128    Mov P16+pori,2 'Cap added
+129   WEnd
+130   Dly 1
+131   pori=pori-(+0.00,+0.00,+0.00,+0.00,+0.00,+10.00)
+132   Mvs P16+pori,2 'Cap added
+133   Dly 1
+134   Mov P11+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00),200
+135   Dly 5
+136   Mvs P11+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00),2
+137   Dly 1
+138   HOpen 1
+139   Dly 1
+140   Mvs P11+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00),160
+141   Dly 1
+142 Return
+143 *DECAP
+144  Tool GCENTER
+145  Mov P11,40
+146  Dly 1
+147  Mvs P11,2
+148  Dly 1
+149  HClose 1
+150  Dly 1
+151  Mvs P11+(+0.00,+0.00,+0.00,+0.00,+0.00,+40.00),2
+152  Dly 1
+153  Mov P11+(+0.00,+0.00,+0.00,+0.00,+0.00,+40.00),40
+154  Dly 1
+155  Mov P15 'HOME
+156  Dly 1
+157  Mov P20,40 'CAP Lager
+158  Dly 1
+159  Mvs P20,-15 'CAP Lager
+160  Dly 1
+161  HOpen 1
+162  Dly 1
+163  Mov P20,40 'CAP Lager
+164  HOpen 1
+165  Dly 1
+166  Mov P15 'HOME
+167  Dly 1
+168 Return
+169 *RSPRING
+170  Tool GSMALL
+171  Mov P11,40
+172  Dly 1
+173  Mvs P11,10
+174  Dly 1
+175  HClose 1
+176  Dly 1
+177  Mov P11,40
+178  Dly 1
+179   'move to spring and store it
+180   Mov P34,40
+181   Dly 1
+182   Mvs P34
+183   Dly 1
+184   HOpen 1
+185   Dly 1
+186   Mvs P34,40
+187   Dly 1
+188   Mov P15 'HOME
+189 Return
+190 *ISPRING
+191  Tool GSMALL
+192  'move to spring and grab it
+193   Mov P34,40
+194   Dly 1
+195   Mvs P34
+196   Dly 1
+197   HClose 1
+198   Dly 1
+199   Mvs P34,40
+200   Dly 1
+201  Mov P11,40
+202  Dly 1
+203  Mvs P11,10
+204  Dly 1
+205  HOpen 1
+206  Dly 1
+207  Mov P11,40
+208  Dly 1
+209 Return
+210 *MOCAP
+211   'set tool to big grabber
+212   Tool GBIGCAP
+213   'move to cab an grab it
+214   Mov P20,40
+215   Dly 1
+216   Mvs P20
+217   Dly 1
+218   HClose 1
+219   Dly 1
+220   Mvs P20,40
+221   Dly 1
+222   'move to big nop
+223   Mov P21,40
+224   Dly 1
+225   Mvs P21
+226   Dly 1
+227   HOpen 1
+228   Dly 1
+229   Mvs P21,40
+230   'change to center tool
+231   Tool (+0.00,+0.00,+110.55,-180.00,+0.00,+90.00)
+232   'grab it with the center tool
+233   Mov P21,40
+234   Dly 1
+235   Mvs P21
+236   Dly 1
+237   HClose 1
+238   Dly 1
+239   'find nops
+240   prot = (+0.00,+0.00,+0.00,+0.00,+0.00,+1.00)
+241   pori = (+0.00,+0.00,+0.00,+0.00,+0.00,+0.00)
+242   pact = (+0.00,+0.00,+0.00,+0.00,+0.00,+0.00)
+243   While(foundHole = 0)
+244    pori = pori - prot
+245    Mvs P21+pori
+246   WEnd
+247   While(foundHole = 1)
+248    pori = pori - prot
+249    Mvs P21+pori
+250   WEnd
+251   Dly 1
+252   'OVRD 5
+253   'move up and to workpice
+254   If (isColor% = 0) Then
+255    'schwarz
+256    pori = pori + (+0.00,+0.00,-2.50,+0.00,+0.00,+0.00)
+257   EndIf
+258   Mvs P21+pori,40
+259   Dly 1
+260   Mvs P22+pori,40
+261   Dly 1
+262   Mvs P22+pori
+263   Dly 1
+264   Mvs P22+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,-75.00)
+265   Dly 1
+266   HOpen 1
+267   Dly 1
+268   Mvs P22+pori+(+0.00,+0.00,+0.00,+0.00,+0.00,-75.00),40
+269   Dly 1
+270   'set tool to big grabber
+271   'If (isColor% = 1) Then
+272    'Tool (+40.00,+0.00,+108.38,-180.00,+0.00,+90.00)
+273   'Else
+274    Tool (+40.00,+0.00,+105.88,-180.00,+0.00,+90.00)
+275   'EndIf
+276   Dly 1
+277   Mvs P22+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00),40
+278   Dly 1
+279   Mvs P22+(+0.00,+0.00,+0.00,+0.00,+0.00,+90.00)
+280   Dly 1
+281   HClose 1
+282   Dly 1
+283   Mvs P_Curr,100
+284   Dly 1
+285   Mov P15 'HOME
+286   Dly 1
+287 Return
+288 *PSLIDE
+289  Tool GBIG
+290  Mov P51,40
+291   Dly 1
+292   Mvs P51,2 'Cap added
+293   Dly 1
+294   HOpen 1
+295   Dly 1
+296   Mvs P51,40
+297   Dly 1
+298   Mov P15
+299   Dly 1
+300 Return
+301 'END
+302 
