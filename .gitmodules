@@ -1,0 +1,3 @@
+[submodule "targetbeschreibung"]
+	path = targetbeschreibung
+	url = https://git.auto.tuwien.ac.at/itia/targetbeschreibung.git
