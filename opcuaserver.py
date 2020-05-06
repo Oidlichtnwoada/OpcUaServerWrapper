@@ -25,6 +25,11 @@ class OpcUaServerForRobotController:
         self.link_method('ns=4;i=1105', self.get_most_recent_error)
         self.link_method('ns=4;i=1119', self.stop_immediately)
         self.link_method('ns=4;i=1108', self.reset_error)
+        self.link_method('ns=4;i=1067', self.read_input)
+        self.link_method('ns=4;i=1111', self.write_output)
+        self.link_method('ns=4;i=1134', self.close_gripper)
+        self.link_method('ns=4;i=1131', self.open_gripper)
+        self.link_method('ns=4;i=1137', self.move)
         self.generate_task_controls()
 
     def link_method(self, node_id, method):
@@ -141,6 +146,41 @@ class OpcUaServerForRobotController:
     def get_most_recent_error(self, parent):
         try:
             return self.rc_client.get_most_recent_error()
+        except RobotControllerError as rce:
+            return self.error_response(rce.status_code)
+
+    @uamethod
+    def read_input(self, parent, index):
+        try:
+            return self.rc_client.read_input(index)
+        except RobotControllerError as rce:
+            return self.error_response(rce.status_code)
+
+    @uamethod
+    def write_output(self, parent, index, value):
+        try:
+            self.rc_client.write_output(index, value)
+        except RobotControllerError as rce:
+            return self.error_response(rce.status_code)
+
+    @uamethod
+    def close_gripper(self, parent):
+        try:
+            self.rc_client.close_gripper()
+        except RobotControllerError as rce:
+            return self.error_response(rce.status_code)
+
+    @uamethod
+    def open_gripper(self, parent):
+        try:
+            self.rc_client.open_gripper()
+        except RobotControllerError as rce:
+            return self.error_response(rce.status_code)
+
+    @uamethod
+    def move(self, parent, x, y, z, a, b, c):
+        try:
+            self.rc_client.move(x, y, z, a, b, c)
         except RobotControllerError as rce:
             return self.error_response(rce.status_code)
 
