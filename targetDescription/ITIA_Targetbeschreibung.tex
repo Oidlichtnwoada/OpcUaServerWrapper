@@ -884,22 +884,23 @@ Insgesamt gibt es drei Rutschen, die nach hinten geneigt sind, damit neu eingetr
 \section{Aufbau Target Roboter}
 
 \subsection{Station Roboter}
-Die Roboterstation besteht primär aus 3 Modulen, der Roboter mit seinem Multifunktionsgripper, dem Handling Modul und dem Assembly Modul. 
+Der vollständige Funktionsumfang des Roboters wird in diesem \href{https://www.youtube.com/watch?v=lkq4dzfn4Q0}{Ablaufvideo} gezeigt. Die Station Roboter setzt sich aus den folgenden drei Modulen zusammen:
+\begin{itemize}
+	\item Roboter Modul
+	\item Handling Modul
+	\item Assembly Modul
+\end{itemize}
 \subsubsection{Module}
-\paragraph{Roboter}
-Der Roboter verfügt über 6 Achsen und kann sich im 3D Raum frei bewegen. Positionen die angefahren werden sollen müssen durch Angabe von XYZ Koordinaten entweder erlernt oder im Programm zur Verfügung gestellt werden. Der Multifunktionsgripper besitzt Ausnehmungen um Kolben, Deckel und das Basisbauteil aufzunehmen. Die Farbe des Basisbauteils kann durch einen entsprechend eingestellten Reflektionssensor in binärer Weise (Bauteil nicht schwarz) erfasst werden.
+\paragraph{Roboter Modul}
+Der Roboter mit der Bezeichung Mitsubishi Electric RV-2F-D verfügt über einen Multifunktionsgripper und er wird von einem Controller mit der Bezeichnung Mitsubishi Electric CR750-D gesteuert. Der Roboter verfügt über sechs Gelenke und sechs Freiheitsgrade. Das bedeutet er kann innerhalb seines Aktionsradius jeden beliebigen Punkt in beliebiger Rotation anfahren. Daher ist für jede Positionierung des Multifunktionsgrippers die Übergabe von sechs Werten nötig, drei Werte bestimmen den Punkt im Raum und die übrigen drei Werte legen die Rotation um jede Achse fest. Der Multifunktionsgripper besitzt Ausnehmungen um Kolben, Deckel, Feder und das Basisbauteil aufzunehmen und weiters über einen Sensor, der nicht schwarze Bauteile in binärer Weise erfasst.
 
-\paragraph{Roboter Handling}
-Das Handling Modul besteht aus einer Rutsche die Basis-Bauteile einer Abhohlposition zuführt. Bauteile werden in dieser Abhohlposition mittels eines Sensors erfasst und können vom Roboter aufgenommen werden. Als Ablagen stehen zwei Zylindermagazine sowie ein Ablageblock zur Verfügung.\newline
-Eine Orientierungsausnehmung am Ablageblock ermöglicht das Ablegen und erneut aufnehmen des Basis-Bauteils. In der Montageausnehmung wird das Bauteil und die zusätzlichen Bestandteile zum Endprodukt vereint. \newline
-Die Ortientierung des Basisbauteils bzw. des Deckels kann mittels einer Reflexlichtschranke erfasst werden. Die Rotation des Deckels erfolgt dabei um eine Rotationsachse die von einem passenden Metallstift vorgegeben ist.
-\paragraph{Roboter Assembly}
+\paragraph{Handling Modul}
+Das Handling Modul besteht aus einer Rutsche die Basisbauteile einer Abholposition zuführt. Diese werden dort über einen Sensor erfasst und können vom Roboter aufgenommen werden. Als Ablagen stehen zwei Zylindermagazine sowie ein Ablageblock zur Verfügung. Eine seichte Ausnehmung am Ablageblock ermöglicht das Ablegen und das erneute Aufnehmen des Basisbauteils. In einer weiteren tieferen Ausnehmung mit Metallstift wird das Bauteil und die zusätzlichen Bestandteile zum Endprodukt verbunden. Die Ortientierung des Basisbauteils bzw. des Deckels kann mittels einer Reflexlichtschranke erfasst werden. Das Aufschrauben des Deckels erfolgt mithilfe des bereits erwähnten Metallstiftes, der das Werkstück festhält.
+\paragraph{Assembly Modul}
 %%\paragraph{6-Achs-Roboter RV-2FB}
-Das Assembly Modul stellt Federn, Kolben und Deckel zur Verfügung. Das Federlager ist ein Zylinderlager aus dem mittels eines Schiebers Federn entnommen und angeboten werden. Ein Sensor ermittelt ob Federn zur Verfügung stehen, der Schieber kann pneumatisch aus und eingefahren werden. Im ausgefahrenen Zustand können Federn vom Roboter aufgenommen werden.\newline
-Kolben werden dem Roboter auf einer Lochplatte mit zwei Reihen a 5 Kolben angeboten. Der Füllstand kann dabei nicht überprüft werden.\newline
-Deckeln werden von einem pneumatischen Schieber aus einem Zylinderlager entnommen. Der Schieber befördert die Deckel in eine Ablageposition in der sie von einem Sensor erfasst werden. Der Schieber muss zur Aufnahme des Deckels eingefahren werden.\newline
-Eine Rutsche dient als Ablage und Entnahmespunkt für fertiggestellte Bauteile.
-\subsubsection{Sensoren/Aktoren}
+Das Assembly Modul stellt Federn, Kolben und Deckel zur Verfügung. Das Federlager ist ein Zylinderlager, das über einen Schieber eine einzelne Feder ausfahren kann. Ein Sensor ermittelt, ob Federn zur Verfügung stehen, und der Schieber kann pneumatisch ein- und ausgefahren werden. Die zwei verschiedenen Kolben werden dem Roboter auf einer Lochplatte mit zwei Reihen mit jeweils fünf Kolben angeboten. Der Füllstand kann hierbei nicht überprüft werden. Die Deckel werden von einem pneumatischen Schieber aus einem Zylinderlager entnommen. Der Schieber befördert die Deckel in eine Ablageposition, in der sie von einem Sensor erfasst werden. Eine Rutsche dient als Ablage und Entnahmepunkt für fertiggestellte Werkstücke.
+
+\subsubsection{Funktionsbeschreibung Sensoren/Aktoren}
 
 \begin{center}
 	\rowcolors{2}{white}{gray!25}
@@ -969,7 +970,7 @@ Eine Rutsche dient als Ablage und Entnahmespunkt für fertiggestellte Bauteile.
 		\rowcolors{2}{gray!25}{white}
 		\begin{tabular}[t]{|p{1.2cm}p{5.5cm}|}
 			\hline
-			\rowcolor{gray} \multicolumn{2}{|c|}{\bf Telnet Controller}\\
+			\rowcolor{gray} \multicolumn{2}{|c|}{\bf Controller (Telnet)}\\
 			\hline\hline
 			Device: & Robot Controller\\
 			ID: & CR750-D\\
@@ -980,7 +981,7 @@ Eine Rutsche dient als Ablage und Entnahmespunkt für fertiggestellte Bauteile.
 		\end{tabular} \\
 	\end{tabular}
 \end{center}
-Sensoren werden über den Befehl \textbf{M\_In(<Index>)} in MELFA-BASIC V, bzw. in OPC UA über die Methode \textbf{readInput(<Index>)} mit der NodeId \textbf{ns=?;i=?}, gelesen.
+Sensoren werden über den Befehl \textbf{M\_In(<Index>)} in MELFA-BASIC V, bzw. in OPC UA über die Methode \textbf{ReadInput(<Index>)} mit der NodeId \textbf{ns=4;i=1067}, gelesen.
 \begin{center}
 	\rowcolors{2}{white}{gray!25}
 	\setlength\extrarowheight{4pt}
@@ -1009,7 +1010,7 @@ Sensoren werden über den Befehl \textbf{M\_In(<Index>)} in MELFA-BASIC V, bzw. 
 		\hline
 	\end{tabularx}
 \end{center}
-Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<value>} in MELFA-BASIC V, bzw. in OPC UA über den Befehl \textbf{writeOutput(<Index>,<value>)} mit der NodeId \textbf{ns=?;i=?}, beschrieben.
+Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<Value>} in MELFA-BASIC V, bzw. in OPC UA über die Methode \textbf{WriteOutput(<Index>,<Value>)} mit der NodeId \textbf{ns=4;i=1111}, beschrieben.
 \begin{center}
 	\rowcolors{2}{white}{gray!25}
 	\setlength\extrarowheight{4pt}
@@ -1053,14 +1054,14 @@ Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<value>} in MELFA-BASIC 
 		\rowcolor{gray!80}
 		\bf MB5-Command & \bf OPC UA & \bf Beschreibung\\
 		\hline\hline
-		Mov(X,Y,Z,A,B,C) & move(X,Y,Z,A,B,C): \textbf{ns=?;i=?} & Modul Roboter (Hand) - Position, Rotation anfahren\\
-		HOpen 1 & gripperOpen(): \textbf{ns=?;i=?} & Modul Roboter (Hand) - Gripper öffnen\\
-		HClose 1 & gripperClose(): \textbf{ns=?;i=?} & Modul Roboter (Hand) - Gripper schließen\\
+		Mov(X,Y,Z,A,B,C) & Move(X,Y,Z,A,B,C): \textbf{ns=4;i=1137} & Modul Roboter (Hand) - Position/Rotation anfahren\\
+		HOpen 1 & OpenGripper(): \textbf{ns=4;i=1131} & Modul Roboter (Hand) - Gripper öffnen\\
+		HClose 1 & CloseGripper(): \textbf{ns=4;i=1134} & Modul Roboter (Hand) - Gripper schließen\\
 		\hline
 	\end{tabularx}
 \end{center}
 
-
+\clearpage
 
 \section{System Netzwerk Struktur}
 \begin{figure}[!htb]

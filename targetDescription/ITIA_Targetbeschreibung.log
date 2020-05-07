@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.16)  7 MAY 2020 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.16)  7 MAY 2020 14:21
 entering extended mode
 **"c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/ITIA_Targetbeschreibung.tex"
 ("c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/ITIA_Targetbeschreibung.tex"
@@ -1730,11 +1730,11 @@ Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 16524 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/TU_INF_Logo_gray-eps-converted-to.pdf images/TU_INF_Logo_gray.eps>
-(epstopdf)             \includegraphics on input line 896.
+(epstopdf)             \includegraphics on input line 899.
 Package epstopdf Info: Output file is already uptodate.
 File: images/TU_INF_Logo_gray-eps-converted-to.pdf Graphic file (type pdf)
 <use images/TU_INF_Logo_gray-eps-converted-to.pdf>
-Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 896.
+Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 899.
 (pdftex.def)             Requested size: 84.61565pt x 22.76219pt.
 Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
@@ -1743,19 +1743,19 @@ Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 8154 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/asg-logo-eps-converted-to.pdf images/asg-logo.eps>
-(epstopdf)             \includegraphics on input line 896.
+(epstopdf)             \includegraphics on input line 899.
 Package epstopdf Info: Output file is already uptodate.
 File: images/asg-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use images/asg-logo-eps-converted-to.pdf>
-Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 896.
+Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 899.
 (pdftex.def)             Requested size: 54.8459pt x 22.76219pt.
  [18]
-Overfull \hbox (2.50748pt too wide) in paragraph at lines 962--962
+Overfull \hbox (2.50748pt too wide) in paragraph at lines 963--963
 []|\T1/opensans-TLF/m/n/10.95 Device:| 
  []
 
 
-Overfull \hbox (2.50748pt too wide) in paragraph at lines 974--974
+Overfull \hbox (2.50748pt too wide) in paragraph at lines 975--975
 []|\T1/opensans-TLF/m/n/10.95 Device:| 
  []
 
@@ -1766,11 +1766,11 @@ Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 16524 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/TU_INF_Logo_gray-eps-converted-to.pdf images/TU_INF_Logo_gray.eps>
-(epstopdf)             \includegraphics on input line 982.
+(epstopdf)             \includegraphics on input line 983.
 Package epstopdf Info: Output file is already uptodate.
 File: images/TU_INF_Logo_gray-eps-converted-to.pdf Graphic file (type pdf)
 <use images/TU_INF_Logo_gray-eps-converted-to.pdf>
-Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 982.
+Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 983.
 (pdftex.def)             Requested size: 84.61565pt x 22.76219pt.
 Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
@@ -1779,21 +1779,31 @@ Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 8154 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/asg-logo-eps-converted-to.pdf images/asg-logo.eps>
-(epstopdf)             \includegraphics on input line 982.
+(epstopdf)             \includegraphics on input line 983.
 Package epstopdf Info: Output file is already uptodate.
 File: images/asg-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use images/asg-logo-eps-converted-to.pdf>
-Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 982.
+Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 983.
 (pdftex.def)             Requested size: 54.8459pt x 22.76219pt.
 [19]
-<images/robot_axis.png, id=379, 736.7525pt x 688.5725pt>
+<images/robot_axis.png, id=380, 736.7525pt x 688.5725pt>
 File: images/robot_axis.png Graphic file (type png)
 <use images/robot_axis.png>
-Package pdftex.def Info: images/robot_axis.png  used on input line 1038.
+Package pdftex.def Info: images/robot_axis.png  used on input line 1039.
 (pdftex.def)             Requested size: 286.80675pt x 268.04837pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
-[]|\T1/opensans-TLF/m/n/10 move(X,Y,Z,A,B,C):
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]|\T1/opensans-TLF/m/n/10 Move(X,Y,Z,A,B,C):
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]|\T1/opensans-TLF/m/n/10 OpenGripper():
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]|\T1/opensans-TLF/m/n/10 CloseGripper():
  []
 
 Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
@@ -1803,11 +1813,11 @@ Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 16524 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/TU_INF_Logo_gray-eps-converted-to.pdf images/TU_INF_Logo_gray.eps>
-(epstopdf)             \includegraphics on input line 1061.
+(epstopdf)             \includegraphics on input line 1062.
 Package epstopdf Info: Output file is already uptodate.
 File: images/TU_INF_Logo_gray-eps-converted-to.pdf Graphic file (type pdf)
 <use images/TU_INF_Logo_gray-eps-converted-to.pdf>
-Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 1061.
+Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 1062.
 (pdftex.def)             Requested size: 84.61565pt x 22.76219pt.
 Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
@@ -1816,13 +1826,40 @@ Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 8154 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/asg-logo-eps-converted-to.pdf images/asg-logo.eps>
-(epstopdf)             \includegraphics on input line 1061.
+(epstopdf)             \includegraphics on input line 1062.
 Package epstopdf Info: Output file is already uptodate.
 File: images/asg-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use images/asg-logo-eps-converted-to.pdf>
-Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 1061.
+Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 1062.
 (pdftex.def)             Requested size: 54.8459pt x 22.76219pt.
 [20]
+Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
+(epstopdf)                    date: 2020-05-06 13:45:47
+(epstopdf)                    size: 245711 bytes
+(epstopdf)             Output file: <images/TU_INF_Logo_gray-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-06 13:45:47
+(epstopdf)                    size: 16524 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/TU_INF_Logo_gray-eps-converted-to.pdf images/TU_INF_Logo_gray.eps>
+(epstopdf)             \includegraphics on input line 1064.
+Package epstopdf Info: Output file is already uptodate.
+File: images/TU_INF_Logo_gray-eps-converted-to.pdf Graphic file (type pdf)
+<use images/TU_INF_Logo_gray-eps-converted-to.pdf>
+Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 1064.
+(pdftex.def)             Requested size: 84.61565pt x 22.76219pt.
+Package epstopdf Info: Source file: <images/asg-logo.eps>
+(epstopdf)                    date: 2020-05-06 13:45:47
+(epstopdf)                    size: 14137 bytes
+(epstopdf)             Output file: <images/asg-logo-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-06 13:45:47
+(epstopdf)                    size: 8154 bytes
+(epstopdf)             Command: <epstopdf --outfile=images/asg-logo-eps-converted-to.pdf images/asg-logo.eps>
+(epstopdf)             \includegraphics on input line 1064.
+Package epstopdf Info: Output file is already uptodate.
+File: images/asg-logo-eps-converted-to.pdf Graphic file (type pdf)
+<use images/asg-logo-eps-converted-to.pdf>
+Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 1064.
+(pdftex.def)             Requested size: 54.8459pt x 22.76219pt.
+ [21 <c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/images/robot_axis.png>]
 Package epstopdf Info: Source file: <images/Network_Structure.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 649592 bytes
@@ -1830,15 +1867,15 @@ Package epstopdf Info: Source file: <images/Network_Structure.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 264169 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/Network_Structure-eps-converted-to.pdf images/Network_Structure.eps>
-(epstopdf)             \includegraphics on input line 1068.
+(epstopdf)             \includegraphics on input line 1069.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/images/Network_Structure-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/Network_Structure-eps-converted-to.pdf, id=386, 1938.24126pt x 942.52126pt>
+<images/Network_Structure-eps-converted-to.pdf, id=394, 1938.24126pt x 942.52126pt>
 File: images/Network_Structure-eps-converted-to.pdf Graphic file (type pdf)
 <use images/Network_Structure-eps-converted-to.pdf>
-Package pdftex.def Info: images/Network_Structure-eps-converted-to.pdf  used on input line 1068.
+Package pdftex.def Info: images/Network_Structure-eps-converted-to.pdf  used on input line 1069.
 (pdftex.def)             Requested size: 473.22894pt x 230.12154pt.
 Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
@@ -1847,11 +1884,11 @@ Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 16524 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/TU_INF_Logo_gray-eps-converted-to.pdf images/TU_INF_Logo_gray.eps>
-(epstopdf)             \includegraphics on input line 1076.
+(epstopdf)             \includegraphics on input line 1077.
 Package epstopdf Info: Output file is already uptodate.
 File: images/TU_INF_Logo_gray-eps-converted-to.pdf Graphic file (type pdf)
 <use images/TU_INF_Logo_gray-eps-converted-to.pdf>
-Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 1076.
+Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 1077.
 (pdftex.def)             Requested size: 84.61565pt x 22.76219pt.
 Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
@@ -1860,13 +1897,15 @@ Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 8154 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/asg-logo-eps-converted-to.pdf images/asg-logo.eps>
-(epstopdf)             \includegraphics on input line 1076.
+(epstopdf)             \includegraphics on input line 1077.
 Package epstopdf Info: Output file is already uptodate.
 File: images/asg-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use images/asg-logo-eps-converted-to.pdf>
-Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 1076.
+Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 1077.
 (pdftex.def)             Requested size: 54.8459pt x 22.76219pt.
-[21 <c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/images/robot_axis.png>] 
+[22
+
+ <c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/images/Network_Structure-eps-converted-to.pdf>] 
 AED: lastpage setting LastPage
 Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
@@ -1875,11 +1914,11 @@ Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 16524 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/TU_INF_Logo_gray-eps-converted-to.pdf images/TU_INF_Logo_gray.eps>
-(epstopdf)             \includegraphics on input line 1082.
+(epstopdf)             \includegraphics on input line 1083.
 Package epstopdf Info: Output file is already uptodate.
 File: images/TU_INF_Logo_gray-eps-converted-to.pdf Graphic file (type pdf)
 <use images/TU_INF_Logo_gray-eps-converted-to.pdf>
-Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 1082.
+Package pdftex.def Info: images/TU_INF_Logo_gray-eps-converted-to.pdf  used on input line 1083.
 (pdftex.def)             Requested size: 84.61565pt x 22.76219pt.
 Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
@@ -1888,33 +1927,33 @@ Package epstopdf Info: Source file: <images/asg-logo.eps>
 (epstopdf)                    date: 2020-05-06 13:45:47
 (epstopdf)                    size: 8154 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/asg-logo-eps-converted-to.pdf images/asg-logo.eps>
-(epstopdf)             \includegraphics on input line 1082.
+(epstopdf)             \includegraphics on input line 1083.
 Package epstopdf Info: Output file is already uptodate.
 File: images/asg-logo-eps-converted-to.pdf Graphic file (type pdf)
 <use images/asg-logo-eps-converted-to.pdf>
-Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 1082.
+Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input line 1083.
 (pdftex.def)             Requested size: 54.8459pt x 22.76219pt.
-[22 <c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/images/Network_Structure-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1082.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 1082.
+[23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1083.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 1083.
  ("c:/Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\targetDescription\ITIA_Targetbeschreibung.xwm") ("c:/Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\targetDescription\ITIA_Targetbeschreibung.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1082.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1082.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1083.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1083.
 Package rerunfilecheck Info: File `ITIA_Targetbeschreibung.out' has not changed.
-(rerunfilecheck)             Checksum: 5274E297B180347176002D70B4C41E89;3444.
+(rerunfilecheck)             Checksum: 7ACE874E8D1A8BD61E51140FD34DB00B;3468.
  ) 
 Here is how much of TeX's memory you used:
- 28635 strings out of 480934
- 537179 string characters out of 2899917
- 897616 words of memory out of 3000000
- 43818 multiletter control sequences out of 15000+200000
+ 28637 strings out of 480934
+ 537201 string characters out of 2899917
+ 897774 words of memory out of 3000000
+ 43819 multiletter control sequences out of 15000+200000
  571415 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,28n,79p,1059b,838s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/opensans/a_nvvucy.enc}{C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/opensans/a_jg4h6q.enc}<C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ascender/opensans/OpenSans-Bold.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ascender/opensans/OpenSans-Regular.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\targetDescription\ITIA_Targetbeschreibung.pdf" (22 pages, 681418 bytes).
+Output written on "c:/Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\targetDescription\ITIA_Targetbeschreibung.pdf" (23 pages, 683246 bytes).
 PDF statistics:
- 448 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
  438 words of extra memory for PDF output out of 10000 (max. 10000000)
 
