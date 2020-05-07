@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.16)  7 MAY 2020 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.16)  7 MAY 2020 14:41
 entering extended mode
 **"c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/ITIA_Targetbeschreibung.tex"
 ("c:/Users/hanne/OneDrive/TU/2020S_Semester/Information Technology in Automation VU/OpcUaServerWrapper/targetDescription/ITIA_Targetbeschreibung.tex"
@@ -1790,20 +1790,20 @@ Package pdftex.def Info: images/asg-logo-eps-converted-to.pdf  used on input lin
 File: images/robot_axis.png Graphic file (type png)
 <use images/robot_axis.png>
 Package pdftex.def Info: images/robot_axis.png  used on input line 1039.
-(pdftex.def)             Requested size: 286.80675pt x 268.04837pt.
+(pdftex.def)             Requested size: 191.19963pt x 178.6884pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
-[]|\T1/opensans-TLF/m/n/10 Move(X,Y,Z,A,B,C):
+[]|\T1/opensans-TLF/m/n/10 Move(X,Y,Z,A,B,C)
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
-[]|\T1/opensans-TLF/m/n/10 OpenGripper():
+[]|\T1/opensans-TLF/m/n/10 OpenGripper()
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
-[]|\T1/opensans-TLF/m/n/10 CloseGripper():
+[]|\T1/opensans-TLF/m/n/10 CloseGripper()
  []
 
 Package epstopdf Info: Source file: <images/TU_INF_Logo_gray.eps>
@@ -1940,7 +1940,7 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 1083.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1083.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1083.
 Package rerunfilecheck Info: File `ITIA_Targetbeschreibung.out' has not changed.
-(rerunfilecheck)             Checksum: 7ACE874E8D1A8BD61E51140FD34DB00B;3468.
+(rerunfilecheck)             Checksum: 859D7B68AD43D88DCDCB30EDEAF778C5;3472.
  ) 
 Here is how much of TeX's memory you used:
  28637 strings out of 480934
@@ -1951,7 +1951,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  70i,28n,79p,1059b,838s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/opensans/a_nvvucy.enc}{C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/opensans/a_jg4h6q.enc}<C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ascender/opensans/OpenSans-Bold.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ascender/opensans/OpenSans-Regular.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/hanne/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\targetDescription\ITIA_Targetbeschreibung.pdf" (23 pages, 683246 bytes).
+Output written on "c:/Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\targetDescription\ITIA_Targetbeschreibung.pdf" (23 pages, 683585 bytes).
 PDF statistics:
  454 PDF objects out of 1000 (max. 8388607)
  78 named destinations out of 1000 (max. 500000)

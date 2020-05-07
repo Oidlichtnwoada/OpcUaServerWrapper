@@ -900,51 +900,51 @@ Das Handling Modul besteht aus einer Rutsche die Basisbauteile einer Abholpositi
 %%\paragraph{6-Achs-Roboter RV-2FB}
 Das Assembly Modul stellt Federn, Kolben und Deckel zur Verfügung. Das Federlager ist ein Zylinderlager, das über einen Schieber eine einzelne Feder ausfahren kann. Ein Sensor ermittelt, ob Federn zur Verfügung stehen, und der Schieber kann pneumatisch ein- und ausgefahren werden. Die zwei verschiedenen Kolben werden dem Roboter auf einer Lochplatte mit zwei Reihen mit jeweils fünf Kolben angeboten. Der Füllstand kann hierbei nicht überprüft werden. Die Deckel werden von einem pneumatischen Schieber aus einem Zylinderlager entnommen. Der Schieber befördert die Deckel in eine Ablageposition, in der sie von einem Sensor erfasst werden. Eine Rutsche dient als Ablage und Entnahmepunkt für fertiggestellte Werkstücke.
 
-\subsubsection{Funktionsbeschreibung Sensoren/Aktoren}
+\subsubsection{Funktionsbeschreibung der Sensoren/Aktoren}
 
 \begin{center}
 	\rowcolors{2}{white}{gray!25}
 	\setlength\extrarowheight{4pt}
 	\small
-	\begin{tabularx}{\textwidth}{|p{4cm}|X|}
+	\begin{tabularx}{\textwidth}{|p{1cm}|p{4cm}|X|}
 		\hline
 		\rowcolor{tublau}
-		\multicolumn{2}{|c|}{\bf \color{white} \large Sensoren}\\
+		\multicolumn{3}{|c|}{\bf \color{white} \large Sensoren}\\
 		\hline\hline
 		\rowcolor{gray!80}
-		\bf Name & \bf Beschreibung\\
+		\bf Index & \bf Name & \bf Beschreibung\\
 		\hline\hline
-		RobPartOriented & Wert ist 1 wenn Bauteil ausgerichtet ist\\
-		RobPartAvailable & Wert ist 1 wenn Bauteil vorhanden ist\\
-		RobStart & Taster, Wert ist 1 wenn gedrückt\\
-		RobStop & Taster, Wert ist 0 wenn gedrückt\\
-		RobReset & Taster, Wert ist 1 wenn gedrückt\\
-		RobSpringRetracted & Wert ist 1 wenn der Federschieber eingefahren ist\\
-		RobSpringExtended & Wert ist 1 wenn der Federschieber ausgefahren ist\\
-		RobSpringAvailable & Wert ist 1 wenn eine Feder vorhanden ist\\
-		RobCapRetracted & Wert ist 1 wenn der Deckelschieber eingefahren ist\\
-		RobCapExtended & Wert ist 1 wenn der Deckelschieber ausgefahren ist\\
-		RobCapAvailable & Wert ist 1 wenn ein Deckel in der Abhohlposition liegt\\
-		RobGripperNotBlack & Wert ist 1 wenn das Bauteil nicht schwarz ist\\
+		1 & RobPartOriented & Wert ist 1 wenn Bauteil ausgerichtet ist\\
+		2 & RobPartAvailable & Wert ist 1 wenn Bauteil vorhanden ist\\
+		3 & RobStart & Taster, Wert ist 1 wenn gedrückt\\
+		4 & RobStop & Taster, Wert ist 0 wenn gedrückt\\
+		5 & RobReset & Taster, Wert ist 1 wenn gedrückt\\
+		8 & RobSpringRetracted & Wert ist 1 wenn der Federschieber eingefahren ist\\
+		9 & RobSpringExtended & Wert ist 1 wenn der Federschieber ausgefahren ist\\
+		10 & RobSpringAvailable & Wert ist 1 wenn eine Feder vorhanden ist\\
+		12 & RobCapRetracted & Wert ist 1 wenn der Deckelschieber eingefahren ist\\
+		13 & RobCapExtended & Wert ist 1 wenn der Deckelschieber ausgefahren ist\\
+		15 & RobCapAvailable & Wert ist 1 wenn ein Deckel in der Abhohlposition liegt\\
+		900 & RobGripperNotBlack & Wert ist 1 wenn das Bauteil nicht schwarz ist\\
 		\hline
 	\end{tabularx}
 	
 	\medskip
 	
-	\begin{tabularx}{\textwidth}{|p{4cm}|X|}
+	\begin{tabularx}{\textwidth}{|p{1cm}|p{4cm}|X|}
 		\hline
 		\rowcolor{tublau}
-		\multicolumn{2}{|c|}{\bf \color{white} \large Aktoren}\\
+		\multicolumn{3}{|c|}{\bf \color{white} \large Aktoren}\\
 		\hline\hline
 		\rowcolor{gray!80}
-		\bf Name & \bf Beschreibung\\
+		\bf Index & \bf Name & \bf Beschreibung\\
 		\hline\hline
-		RobStartLed & Lampe leuchtet bei 1\\
-		RobResetLed & Lampe leuchtet bei 1\\
-		RobLed1 & Lampe leuchtet bei 1\\
-		RobLed2 & Lampe leuchtet bei 1\\
-		RobSpringPusher & Federschieber ausfahren\\
-		RobCapPusher & Deckelschieber ausfahren\\
+		0 & RobStartLed & Lampe leuchtet bei 1\\
+		1 & RobResetLed & Lampe leuchtet bei 1\\
+		2 & RobLed1 & Lampe leuchtet bei 1\\
+		3 & RobLed2 & Lampe leuchtet bei 1\\
+		8 & RobSpringPusher & Federschieber ausfahren\\
+		12 & RobCapPusher & Deckelschieber ausfahren\\
 		\hline
 	\end{tabularx}
 \end{center}
@@ -986,7 +986,7 @@ Sensoren werden über den Befehl \textbf{M\_In(<Index>)} in MELFA-BASIC V, bzw. 
 	\rowcolors{2}{white}{gray!25}
 	\setlength\extrarowheight{4pt}
 	\small
-	\begin{tabularx}{\textwidth}{|p{4cm}|X|}
+	\begin{tabularx}{\textwidth}{|p{1cm}|X|}
 		\hline
 		\rowcolor{tublau}
 		\multicolumn{2}{|c|}{\bf \color{white} \large Sensoren}\\
@@ -1015,7 +1015,7 @@ Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<Value>} in MELFA-BASIC 
 	\rowcolors{2}{white}{gray!25}
 	\setlength\extrarowheight{4pt}
 	\small
-	\begin{tabularx}{\textwidth}{|p{4cm}|X|}
+	\begin{tabularx}{\textwidth}{|p{1cm}|X|}
 		\hline
 		\rowcolor{tublau}
 		\multicolumn{2}{|c|}{\bf \color{white} \large Aktoren}\\
@@ -1036,7 +1036,7 @@ Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<Value>} in MELFA-BASIC 
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.6\textwidth]{images/robot_axis.png}
+	\includegraphics[width=0.4\textwidth]{images/robot_axis.png}
 	\caption{Robot coordinate system in XYZ mode}
 	\label{fig:robot_axis}
 \end{figure}
@@ -1054,9 +1054,9 @@ Aktoren werden über den Befehl \textbf{M\_Out(<Index>)=<Value>} in MELFA-BASIC 
 		\rowcolor{gray!80}
 		\bf MB5-Command & \bf OPC UA & \bf Beschreibung\\
 		\hline\hline
-		Mov(X,Y,Z,A,B,C) & Move(X,Y,Z,A,B,C): \textbf{ns=4;i=1137} & Modul Roboter (Hand) - Position/Rotation anfahren\\
-		HOpen 1 & OpenGripper(): \textbf{ns=4;i=1131} & Modul Roboter (Hand) - Gripper öffnen\\
-		HClose 1 & CloseGripper(): \textbf{ns=4;i=1134} & Modul Roboter (Hand) - Gripper schließen\\
+		Mov (X,Y,Z,A,B,C) & Move(X,Y,Z,A,B,C) \textbf{ns=4;i=1137} & Modul Roboter (Hand) - Position/Rotation anfahren\\
+		HOpen 1 & OpenGripper() \textbf{ns=4;i=1131} & Modul Roboter (Hand) - Gripper öffnen\\
+		HClose 1 & CloseGripper() \textbf{ns=4;i=1134} & Modul Roboter (Hand) - Gripper schließen\\
 		\hline
 	\end{tabularx}
 \end{center}
