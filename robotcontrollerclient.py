@@ -134,7 +134,9 @@ class RobotControllerClient:
         self.process_request(f'{robot_number};{slot_number};HNDOFF{hand_number}')
 
     def move(self, x, y, z, a, b, c, robot_number=1, slot_number=1):
-        self.process_request(f'{robot_number};{slot_number};EXEC2=MOV ({x},{y},{z},{a},{b},{c})')
+        self.process_request(
+            f'{robot_number};{slot_number};EXEC2=TEMP=({x:.0f},{y:.0f},{z:.0f},{a:.0f},{b:.0f},{c:.0f})')
+        self.process_request(f'{robot_number};{slot_number};EXEC2=MOV TEMP')
 
 
 class RobotControllerError(Exception):
