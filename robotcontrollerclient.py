@@ -68,7 +68,6 @@ class RobotControllerClient:
 
     def stop_immediately(self, robot_number=1, slot_number=1):
         self.process_request(f'{robot_number};{slot_number};STOP')
-        self.turn_servos_off(robot_number, slot_number)
 
     def stop_at_next_cycle(self, robot_number=1, slot_number=1):
         self.process_request(f'{robot_number};{slot_number};CSTOP')
@@ -79,7 +78,6 @@ class RobotControllerClient:
 
     def move_to_safe_position(self, robot_number=1, slot_number=1):
         if not self.is_running(robot_number, slot_number):
-            self.turn_servos_on(robot_number, slot_number)
             self.process_request(f'{robot_number};{slot_number};MOVSP')
         else:
             raise RobotControllerError(ua.StatusCodes.BadInvalidState)
@@ -92,11 +90,11 @@ class RobotControllerClient:
         if self.get_current_program(robot_number, slot_number) != program_name:
             self.initialize_all_slots(robot_number, slot_number)
             self.process_request(f'{robot_number};{slot_number};PRGLOAD={program_name}')
-        self.turn_servos_on(robot_number, slot_number)
         self.process_request(f'{robot_number};{slot_number};RUN{program_name};{int(not repeated)}')
 
     def reset_error(self, robot_number=1, slot_number=1):
         self.process_request(f'{robot_number};{slot_number};RSTALRM', timeout_factor=20)
+        self.turn_servos_on(robot_number, slot_number)
 
     def reset_program(self, robot_number=1, slot_number=1):
         if not self.is_running(robot_number, slot_number):
@@ -105,11 +103,7 @@ class RobotControllerClient:
             raise RobotControllerError(ua.StatusCodes.BadInvalidState)
 
     def turn_servos_on(self, robot_number=1, slot_number=1):
-        self.process_request(f'{robot_number};{slot_number};SRVON')
-        sleep(2)
-
-    def turn_servos_off(self, robot_number=1, slot_number=1):
-        self.process_request(f'{robot_number};{slot_number};SRVOFF', timeout_factor=20)
+        self.process_request(f'{robot_number};{slot_number};SRVON', timeout_factor=20)
 
     def get_most_recent_error(self, robot_number=1, slot_number=1):
         self.reset_error()
@@ -119,7 +113,8 @@ class RobotControllerClient:
         while True:
             try:
                 self.process_request(f'{robot_number};{slot_number};CNTLON')
-                self.reset_error()
+                self.reset_error(robot_number, slot_number)
+                self.turn_servos_on(robot_number, slot_number)
                 break
             except RobotControllerError:
                 sleep(1)
@@ -137,11 +132,10 @@ class RobotControllerClient:
         self.process_request(f'{robot_number};{slot_number};HNDOFF{hand_number}')
 
     def move(self, x, y, z, a, b, c, robot_number=1, slot_number=1):
-        self.turn_servos_on(robot_number, slot_number)
         self.process_request(
             f'{robot_number};{slot_number};EXEC2=TEMP=({x:.02f},{y:.02f},{z:.02f},{a:.02f},{b:.02f},{c:.02f})(7,0)',
             timeout_factor=5)
-        self.process_request(f'{robot_number};{slot_number};EXEC2=MOV TEMP', timeout_factor=5)
+        self.process_request(f'{robot_number};{slot_number};EXEC2=MOV TEMP', timeout_factor=15)
 
 
 class RobotControllerError(Exception):
