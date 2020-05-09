@@ -27,7 +27,8 @@ class RobotControllerClient:
             try:
                 self.program_list.clear()
                 self.initialize_all_slots(robot_number, slot_number)
-                while self.get_current_program(robot_number, slot_number) not in self.program_list:
+                while self.get_current_program(robot_number, slot_number) not in self.program_list \
+                        and self.get_current_program(robot_number, slot_number) != '':
                     self.program_list.append(self.get_current_program(robot_number, slot_number))
                     self.scroll_up_to_next_program(robot_number, slot_number)
                 break
