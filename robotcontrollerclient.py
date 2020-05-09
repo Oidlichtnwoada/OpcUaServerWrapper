@@ -111,12 +111,14 @@ class RobotControllerClient:
         self.process_request(f'{robot_number};{slot_number};SRVOFF', timeout_factor=20)
 
     def get_most_recent_error(self, robot_number=1, slot_number=1):
+        self.reset_error()
         return self.process_request(f'{robot_number};{slot_number};ERRORLOGTOP')[3]
 
     def setup_controller(self, robot_number=1, slot_number=1):
         while True:
             try:
                 self.process_request(f'{robot_number};{slot_number};CNTLON')
+                self.reset_error()
                 break
             except RobotControllerError:
                 sleep(1)
