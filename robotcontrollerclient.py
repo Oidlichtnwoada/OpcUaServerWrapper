@@ -96,7 +96,7 @@ class RobotControllerClient:
         self.process_request(f'{robot_number};{slot_number};RUN{program_name};{int(not repeated)}')
 
     def reset_error(self, robot_number=1, slot_number=1):
-        self.process_request(f'{robot_number};{slot_number};RSTALRM')
+        self.process_request(f'{robot_number};{slot_number};RSTALRM', timeout_factor=5)
 
     def reset_program(self, robot_number=1, slot_number=1):
         if not self.is_running(robot_number, slot_number):
