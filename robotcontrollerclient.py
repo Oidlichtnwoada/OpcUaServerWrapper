@@ -138,7 +138,7 @@ class RobotControllerClient:
 
     def move(self, x, y, z, a, b, c, robot_number=1, slot_number=1):
         self.process_request(
-            f'{robot_number};{slot_number};EXEC2=TEMP=({x:.0f},{y:.0f},{z:.0f},{a:.0f},{b:.0f},{c:.0f})')
+            f'{robot_number};{slot_number};EXEC2=TEMP=({x:.02f},{y:.02f},{z:.02f},{a:.02f},{b:.02f},{c:.02f})(0,0)')
         self.process_request(f'{robot_number};{slot_number};EXEC2=MOV TEMP')
 
 
