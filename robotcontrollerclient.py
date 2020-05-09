@@ -137,6 +137,7 @@ class RobotControllerClient:
         self.process_request(f'{robot_number};{slot_number};HNDOFF{hand_number}')
 
     def move(self, x, y, z, a, b, c, robot_number=1, slot_number=1):
+        self.turn_servos_on(robot_number, slot_number)
         self.process_request(
             f'{robot_number};{slot_number};EXEC2=TEMP=({x:.02f},{y:.02f},{z:.02f},{a:.02f},{b:.02f},{c:.02f})(7,0)',
             timeout_factor=5)
