@@ -96,7 +96,7 @@ class RobotControllerClient:
         self.process_request(f'{robot_number};{slot_number};RUN{program_name};{int(not repeated)}')
 
     def reset_error(self, robot_number=1, slot_number=1):
-        self.process_request(f'{robot_number};{slot_number};RSTALRM', timeout_factor=5)
+        self.process_request(f'{robot_number};{slot_number};RSTALRM', timeout_factor=20)
 
     def reset_program(self, robot_number=1, slot_number=1):
         if not self.is_running(robot_number, slot_number):
@@ -138,7 +138,7 @@ class RobotControllerClient:
 
     def move(self, x, y, z, a, b, c, robot_number=1, slot_number=1):
         self.process_request(
-            f'{robot_number};{slot_number};EXEC2=TEMP=({x:.02f},{y:.02f},{z:.02f},{a:.02f},{b:.02f},{c:.02f})(0,0)',
+            f'{robot_number};{slot_number};EXEC2=TEMP=({x:.02f},{y:.02f},{z:.02f},{a:.02f},{b:.02f},{c:.02f})(7,0)',
             timeout_factor=5)
         self.process_request(f'{robot_number};{slot_number};EXEC2=MOV TEMP', timeout_factor=5)
 
