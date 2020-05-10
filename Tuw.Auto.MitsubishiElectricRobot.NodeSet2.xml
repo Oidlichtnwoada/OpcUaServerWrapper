@@ -1275,9 +1275,7 @@
                             </uax:DataType>
                             <uax:ValueRank>-1</uax:ValueRank>
                             <uax:ArrayDimensions/>
-                            <uax:Description>
-                                <uax:Text>the index of the input pin</uax:Text>
-                            </uax:Description>
+                            <uax:Description/>
                         </uax:Argument>
                     </uax:Body>
                 </uax:ExtensionObject>
