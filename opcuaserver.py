@@ -192,6 +192,7 @@ class OpcUaServerForRobotController:
             objects = self.opc_ua_server.load_type_definitions()
             
             print(dir(test))
+            print("                                                             ")
             print(dir(objects))
 
             for i in range(numLogs):
