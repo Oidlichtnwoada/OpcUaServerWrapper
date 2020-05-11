@@ -190,7 +190,9 @@ class OpcUaServerForRobotController:
         try:
             test = self.opc_ua_server.get_node('ns=4;i=1155')
             objects = self.opc_ua_server.load_type_definitions()
-            abc = getattr(ua, "RobotError")
+            
+            dir(test)
+            dir(objects)
 
             for i in range(numLogs):
                 if i == 0:
