@@ -94,6 +94,7 @@ class RobotControllerClient:
 
     def reset_error(self, robot_number=1, slot_number=1):
         self.process_request(f'{robot_number};{slot_number};RSTALRM', timeout_factor=20)
+        self.turn_servos_on(robot_number, slot_number)
 
     def reset_program(self, robot_number=1, slot_number=1):
         if not self.is_running(robot_number, slot_number):
@@ -111,8 +112,8 @@ class RobotControllerClient:
     def setup_controller(self, robot_number=1, slot_number=1):
         while True:
             try:
-                self.reset_error(robot_number, slot_number)
                 self.process_request(f'{robot_number};{slot_number};CNTLON')
+                self.reset_error(robot_number, slot_number)
                 self.turn_servos_on(robot_number, slot_number)
                 break
             except RobotControllerError:
