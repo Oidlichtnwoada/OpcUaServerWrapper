@@ -191,7 +191,7 @@ class OpcUaServerForRobotController:
             for i in range(numLogs):
                 if i == 0:
                     print(self.rc_client.get_error_log("TOP"))
-                else
+                else:
                     print(self.rc_client.get_error_log("+1"))
         except RobotControllerError as rce:
             return self.error_response(rce.status_code)
