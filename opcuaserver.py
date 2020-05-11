@@ -189,7 +189,7 @@ class OpcUaServerForRobotController:
     def getErrorLog(self, parent, numLogs):
         try:
             test = self.opc_ua_server.get_node('ns=4;i=1155')
-            objects = self.opc_ua_server.load_type_definitions(test)
+            objects = self.opc_ua_server.load_type_definitions()
             test.set_writable()
             test.ErrorDate = "Test1"
             test.ErrorTime = "Test3"
