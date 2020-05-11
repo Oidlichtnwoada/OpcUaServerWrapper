@@ -191,8 +191,11 @@ class OpcUaServerForRobotController:
             for i in range(numLogs):
                 if i == 0:
                     test = self.opc_ua_server.get_node('ns=4;i=1155')
-                    test2 = getattr(ua, "RobotError")()
+                    test.ErrorDate = "Test1"
+                    test.ErrorTime = "Test3"
 
+                    return test
+                    
                     print(self.rc_client.get_error_log("TOP"))
                 else:
                     print(self.rc_client.get_error_log("+1"))
