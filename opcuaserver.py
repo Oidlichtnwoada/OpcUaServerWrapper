@@ -193,7 +193,7 @@ class OpcUaServerForRobotController:
             
             print(dir(test))
             print("                                                             ")
-            print(dir(objects))
+            print(dir(test.get_variables()))
 
             for i in range(numLogs):
                 if i == 0:
