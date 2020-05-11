@@ -193,7 +193,7 @@ class OpcUaServerForRobotController:
             
             print(dir(test))
             print("                                                             ")
-            print(dir(test.get_variables()))
+            print(dir(test.get_node_class()))
 
             for i in range(numLogs):
                 if i == 0:
