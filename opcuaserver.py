@@ -30,6 +30,7 @@ class OpcUaServerForRobotController:
         self.link_method('ns=4;i=1134', self.close_gripper)
         self.link_method('ns=4;i=1131', self.open_gripper)
         self.link_method('ns=4;i=1137', self.move)
+        self.link_method('ns=4;i=1140', self.getErrorLog)
         self.generate_task_controls()
 
     def link_method(self, node_id, method):
@@ -181,6 +182,17 @@ class OpcUaServerForRobotController:
     def move(self, parent, x, y, z, a, b, c):
         try:
             self.rc_client.move(x, y, z, a, b, c)
+        except RobotControllerError as rce:
+            return self.error_response(rce.status_code)
+
+    @uamethod
+    def getErrorLog(self, parent, numLogs):
+        try:
+            for i in range(numLogs):
+                if i == 0:
+                    print(self.rc_client.get_error_log("TOP"))
+                else
+                    print(self.rc_client.get_error_log("+1"))
         except RobotControllerError as rce:
             return self.error_response(rce.status_code)
 
