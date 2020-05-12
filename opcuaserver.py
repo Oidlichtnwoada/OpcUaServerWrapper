@@ -191,7 +191,6 @@ class OpcUaServerForRobotController:
             self.opc_ua_server.load_type_definitions()
 
             err = self.opc_ua_server.get_node('ns=4;i=1155')
-            err.is_writable()
 
             robot_error = ua.NodeId.from_string('ns=4;i=1155')
             print(dir(robot_error))
