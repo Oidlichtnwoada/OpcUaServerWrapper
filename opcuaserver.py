@@ -192,7 +192,7 @@ class OpcUaServerForRobotController:
 
             robot_error = ua.NodeId.from_string('ns=4;i=1155')
 
-            err = self.opc_ua_server.add_variable_type(robot_error, "RobotError", robot_error.datatype)
+            err = self.opc_ua_server.nodes.objects.add_variable_type(robot_error, "RobotError", robot_error.datatype)
 
             print(dir(err))
             robot_error.ErrorDate = "test"
