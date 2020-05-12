@@ -190,7 +190,7 @@ class OpcUaServerForRobotController:
         try:
             self.opc_ua_server.load_type_definitions()
             
-            basic_var = self.opc_ua_server.nodes.objects.add_variable(ua.NodeId(4), 'RobotError')
+            basic_var = self.opc_ua_server.nodes.objects.add_variable_type(ua.NodeId(4), 'RobotError')
 
             for i in range(numLogs):
                 if i == 0:
