@@ -193,7 +193,7 @@ class OpcUaServerForRobotController:
             err = self.opc_ua_server.get_node('ns=4;i=1155')
 
             robot_error = ua.NodeId.from_string('ns=4;i=1155')
-            print(dir(robot_error))
+            print(dir(err))
             robot_error.ErrorDate = "test"
             robot_error.ErrorText = "fehler"
 
