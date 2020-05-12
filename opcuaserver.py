@@ -188,10 +188,10 @@ class OpcUaServerForRobotController:
     @uamethod
     def getErrorLog(self, parent, numLogs):
         try:
-            #test = self.opc_ua_server.get_node('ns=4;i=1155')
-            #objects,test2 = self.opc_ua_server.load_type_definitions()
+            test = self.opc_ua_server.get_node('ns=4;i=1155')
+            objects,test2 = self.opc_ua_server.load_type_definitions()
             
-            #print(dir(test2))
+            print(dir(test2))
 
             for i in range(numLogs):
                 if i == 0:
