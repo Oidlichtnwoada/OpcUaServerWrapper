@@ -12,6 +12,7 @@ class OpcUaServerForRobotController:
         self.rc_client = RCClient(ip_rc, port_rc)
         self.opc_ua_server = Server()
         self.opc_ua_server.set_endpoint(f'opc.tcp://{ip_os}:{port_os}/')
+        self.idx = self.opc_ua_server.register_namespace(f'opc.tcp://{ip_os}:{port_os}/')
         self.opc_ua_server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.opc_ua_server.set_server_name(self.__class__.__name__)
         self.opc_ua_server.import_xml('./Opc.Ua.NodeSet2.xml')
@@ -189,8 +190,13 @@ class OpcUaServerForRobotController:
     def getErrorLog(self, parent, numLogs):
         try:
             self.opc_ua_server.load_type_definitions()
-            
-            basic_var = self.opc_ua_server.nodes.objects.add_variable_type(ua.NodeId(4), 'RobotError')
+            robot_error = self.opc_ua_server.get_node('ns=4;i=1155')
+            basic_var = ua_server.server.nodes.objects.add_variable_type(ua.NodeId(namespaceidx=self.idx), 'RobotError',
+                                                                ua.Variant(None, ua.VariantType.Null),
+                                                                datatype=robot_error.data_type)
+
+            basic_var.set_writable()
+            basic_msg = get_ua_class("RobotError")()
 
             for i in range(numLogs):
                 if i == 0:
