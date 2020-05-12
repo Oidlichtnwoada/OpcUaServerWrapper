@@ -190,13 +190,7 @@ class OpcUaServerForRobotController:
     def getErrorLog(self, parent, numLogs):
         try:
             self.opc_ua_server.load_type_definitions()
-            robot_error = self.opc_ua_server.get_node('ns=4;i=1155')
-            basic_var = ua_server.server.nodes.objects.add_variable_type(ua.NodeId(namespaceidx=self.idx), 'RobotError',
-                                                                ua.Variant(None, ua.VariantType.Null),
-                                                                datatype=robot_error.data_type)
-
-            basic_var.set_writable()
-            basic_msg = get_ua_class("RobotError")()
+            print(dir(ua))
 
             for i in range(numLogs):
                 if i == 0:
