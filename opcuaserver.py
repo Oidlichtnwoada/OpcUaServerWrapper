@@ -12,7 +12,6 @@ class OpcUaServerForRobotController:
         self.rc_client = RCClient(ip_rc, port_rc)
         self.opc_ua_server = Server()
         self.opc_ua_server.set_endpoint(f'opc.tcp://{ip_os}:{port_os}/')
-        self.idx = self.opc_ua_server.register_namespace(f'opc.tcp://{ip_os}:{port_os}/')
         self.opc_ua_server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.opc_ua_server.set_server_name(self.__class__.__name__)
         self.opc_ua_server.import_xml('./Opc.Ua.NodeSet2.xml')
