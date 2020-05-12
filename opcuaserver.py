@@ -191,11 +191,13 @@ class OpcUaServerForRobotController:
             self.opc_ua_server.load_type_definitions()
 
             robot_error = ua.NodeId.from_string('ns=4;i=1155')
+
+            print(dir(robot_error))
             robot_error.ErrorDate = "test"
             robot_error.ErrorText = "fehler"
 
             return robot_error
-            
+
             for i in range(numLogs):
                 if i == 0:
                     print(self.rc_client.get_error_log("TOP"))
