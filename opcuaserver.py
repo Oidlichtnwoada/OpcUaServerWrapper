@@ -190,13 +190,16 @@ class OpcUaServerForRobotController:
         try:
             self.opc_ua_server.load_type_definitions()
 
-            robot_error = ua.NodeId.from_string('ns=4;i=1155')
+            err = self.opc_ua_server.get_node('ns=4;i=1155')
+            err.is_writable()
 
+            robot_error = ua.NodeId.from_string('ns=4;i=1155')
             print(dir(robot_error))
             robot_error.ErrorDate = "test"
             robot_error.ErrorText = "fehler"
 
-            return robot_error
+            err.set_value(robot_error)
+            return err
 
             for i in range(numLogs):
                 if i == 0:
