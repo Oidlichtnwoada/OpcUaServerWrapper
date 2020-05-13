@@ -29,7 +29,7 @@ class OpcUaServerForRobotController:
         self.link_method('ns=4;i=1134', self.close_gripper)
         self.link_method('ns=4;i=1131', self.open_gripper)
         self.link_method('ns=4;i=1137', self.move)
-        self.link_method('ns=4;i=1140', self.getErrorLog)
+        self.link_method('ns=4;i=1140', self.get_error_log)
         self.generate_task_controls()
 
     def link_method(self, node_id, method):
@@ -185,7 +185,7 @@ class OpcUaServerForRobotController:
             return self.error_response(rce.status_code)
 
     @uamethod
-    def getErrorLog(self, parent, numLogs):
+    def get_error_log(self, parent, num_error_logs):
         try:
             self.opc_ua_server.load_type_definitions()
 
@@ -198,13 +198,14 @@ class OpcUaServerForRobotController:
             robot_error.ErrorText = "fehler"
 
             err.set_value(robot_error)
-            return err
 
-            for i in range(numLogs):
+            for i in range(num_error_logs):
                 if i == 0:
-                    print(self.rc_client.get_error_log("TOP"))
+                    print(self.rc_client.get_error_log_entry("TOP"))
                 else:
-                    print(self.rc_client.get_error_log("+1"))
+                    print(self.rc_client.get_error_log_entry("+1"))
+
+            return err
         except RobotControllerError as rce:
             return self.error_response(rce.status_code)
 
