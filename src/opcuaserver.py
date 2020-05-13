@@ -2,7 +2,6 @@ from threading import Thread
 from time import sleep
 
 from opcua import Server, ua, uamethod
-
 from robotcontrollerclient import RobotControllerClient as RCClient, RobotControllerError
 
 

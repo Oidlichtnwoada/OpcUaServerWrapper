@@ -1,7 +1,6 @@
 from time import sleep
 
 from opcua import ua
-
 from telnetclient import TelnetClient
 
 
@@ -137,8 +136,9 @@ class RobotControllerClient:
             timeout_factor=5)
         self.process_request(f'{robot_number};{slot_number};EXEC2=MOV TEMP', timeout_factor=15)
 
-    def get_error_log(self, index, robot_number=1, slot_number=1):
+    def get_error_log_entry(self, index, robot_number=1, slot_number=1):
         return self.process_request(f'{robot_number};{slot_number};ERRORLOG{index}')
+
 
 class RobotControllerError(Exception):
     def __init__(self, status_code, error_code=None):

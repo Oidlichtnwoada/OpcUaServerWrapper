@@ -1,7 +1,6 @@
 from sys import argv, exit
 
 from IPy import IP
-
 from opcuaserver import OpcUaServerForRobotController
 
 MAX_PORT = 65535
