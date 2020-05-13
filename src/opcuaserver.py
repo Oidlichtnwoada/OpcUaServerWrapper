@@ -188,6 +188,7 @@ class OpcUaServerForRobotController:
     def get_error_log(self, parent, num_error_logs):
         try:
             RobotError = self.opc_ua_server.load_type_definitions()[1]['RobotError']
+            ua.extension_object_ids[RobotError.__name__] = ua.NodeId.from_string('ns=4;i=1155')
             robot_errors = []
             error_log_entries = self.rc_client.get_error_log_entries(num_error_logs)
             for error_log in error_log_entries:
