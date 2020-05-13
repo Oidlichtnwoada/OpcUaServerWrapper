@@ -187,11 +187,11 @@ class OpcUaServerForRobotController:
     @uamethod
     def get_error_log(self, parent, num_error_logs):
         try:
-            construct_robot_error = self.opc_ua_server.load_type_definitions()[1]['RobotError']
+            RobotError = self.opc_ua_server.load_type_definitions()[1]['RobotError']
             robot_errors = []
             error_log_entries = self.rc_client.get_error_log_entries(num_error_logs)
             for error_log in error_log_entries:
-                robot_error = construct_robot_error()
+                robot_error = RobotError()
                 robot_error.ErrorDate = error_log[0]
                 robot_error.ErrorTime = error_log[1]
                 robot_error.ErrorCode = int(error_log[2])
