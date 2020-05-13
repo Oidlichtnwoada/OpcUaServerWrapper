@@ -135,8 +135,15 @@ class RobotControllerClient:
             timeout_factor=5)
         self.process_request(f'{robot_number};{slot_number};EXEC2=MOV TEMP', timeout_factor=15)
 
-    def get_error_log_entry(self, index, robot_number=1, slot_number=1):
-        return self.process_request(f'{robot_number};{slot_number};ERRORLOG{index}')
+    def get_error_log_entries(self, num_error_logs, robot_number=1, slot_number=1):
+        error_log_entries = []
+        for index in range(num_error_logs):
+            if index == 0:
+                error_log_entry = self.process_request(f'{robot_number};{slot_number};ERRORLOGTOP')
+            else:
+                error_log_entry = self.process_request(f'{robot_number};{slot_number};ERRORLOG+1')
+            error_log_entries.append(error_log_entry)
+        return error_log_entries
 
 
 class RobotControllerError(Exception):

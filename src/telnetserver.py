@@ -14,7 +14,11 @@ class TelnetServer():
         while True:
             self.client_socket = self.server_socket.accept()[0]
             while True:
-                request = self.client_socket.recv(1024)
+                request = b''
+                try:
+                    request = self.client_socket.recv(1024)
+                except ConnectionResetError:
+                    pass
                 if request:
                     print(request.decode('ascii'))
                     self.client_socket.send(self.response.encode('ascii'))
