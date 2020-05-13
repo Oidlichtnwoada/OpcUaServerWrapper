@@ -187,25 +187,17 @@ class OpcUaServerForRobotController:
     @uamethod
     def get_error_log(self, parent, num_error_logs):
         try:
-            self.opc_ua_server.load_type_definitions()
-
-            robot_error = ua.NodeId.from_string('ns=4;i=1155')
-
-            err = self.opc_ua_server.nodes.objects.add_variable_type(robot_error, "RobotError", robot_error.datatype)
-
-            print(dir(err))
-            robot_error.ErrorDate = "test"
-            robot_error.ErrorText = "fehler"
-
-            err.set_value(robot_error)
-
+            construct_robot_error = self.opc_ua_server.load_type_definitions()[1]['RobotError']
+            error_log = []
             for i in range(num_error_logs):
+                current_robot_error = construct_robot_error()
                 if i == 0:
-                    print(self.rc_client.get_error_log_entry("TOP"))
+                    current_error_log_entry = self.rc_client.get_error_log_entry("TOP")
                 else:
-                    print(self.rc_client.get_error_log_entry("+1"))
-
-            return err
+                    current_error_log_entry = self.rc_client.get_error_log_entry("+1")
+                # set all properties of the robot error by using current_error_log_entry
+                error_log.append(current_robot_error)
+            return error_log
         except RobotControllerError as rce:
             return self.error_response(rce.status_code)
 
