@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Vision" version="4">
+  <OBJECT>
+    <ID name="Vision" mc="Analyst.AnalystProject" uid="06c60a13-bab1-4943-993d-6cf76917cca8"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Vision]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="RequirementRoot">
+        <COMPID name="Requirement Container" mc="Analyst.RequirementContainer" uid="f2cfb733-866a-49d8-85a8-e82ce95f90cd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

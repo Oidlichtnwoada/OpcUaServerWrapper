@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DocumentPublisher.Document" version="4">
+  <OBJECT>
+    <ID name="DocumentPublisher.Document" mc="Infrastructure.Stereotype" uid="01ec0f70-0000-12bb-0000-000000000000"/>
+    <PID name="Document Publisher" mc="Infrastructure.Profile" uid="01ec0f70-0000-12b8-0000-000000000000"/>
+    <ATTRIBUTES>
+      <ATT name="Image"><![CDATA[res/images/docartifact48x48.png]]></ATT>
+      <ATT name="Icon"><![CDATA[res/icon/docartifact.png]]></ATT>
+      <ATT name="IsHidden">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="LabelKey"><![CDATA[%stereotype.DocumentPublisher.Document.label]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Standard.Artifact]]></ATT>
+      <ATT name="Name"><![CDATA[DocumentPublisher.Document]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedTagType">
+        <OBJECT>
+          <ID name="DocumentPublisher.targetFile" mc="Infrastructure.TagType" uid="01ec0f70-0000-12c8-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.targetFile.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.targetFile]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.targetDir" mc="Infrastructure.TagType" uid="01ec0f70-0000-12cd-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.targetDir.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.targetDir]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.template" mc="Infrastructure.TagType" uid="01ec0f70-0000-12d2-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.template.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.template]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.name" mc="Infrastructure.TagType" uid="01ec0f70-0000-26de-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.name.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.name]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.groupMode" mc="Infrastructure.TagType" uid="01ec0f70-0000-2756-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[0]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.groupMode.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.groupMode]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.generateDiagram" mc="Infrastructure.TagType" uid="01ec1198-0000-37cd-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[0]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.generateDiagram.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.generateDiagram]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.content" mc="Infrastructure.TagType" uid="01ec1198-0001-b9cd-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.content.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.content]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.revisionMode" mc="Infrastructure.TagType" uid="01ec1198-0002-0575-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[0]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.revisionMode.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.revisionMode]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.stylesheet" mc="Infrastructure.TagType" uid="01ec18cc-0000-7d1c-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.stylesheet.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.stylesheet]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.language" mc="Infrastructure.TagType" uid="384f72c3-b218-4596-884e-14a50960dc10"/>
+          <ATTRIBUTES>
+            <ATT name="ParamNumber"><![CDATA[1]]></ATT>
+            <ATT name="IsQualified">false</ATT>
+            <ATT name="BelongToPrototype">false</ATT>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%tagtype.DocumentPublisher.language.label]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.language]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="DefinedNoteType">
+        <OBJECT>
+          <ID name="DocumentPublisher.properties" mc="Infrastructure.NoteType" uid="01ec0f70-0000-12c3-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%notetype.DocumentPublisher.properties.label]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.properties]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="DocumentPublisher.revisionHistory" mc="Infrastructure.NoteType" uid="01ec1198-0001-b9c8-0000-000000000000"/>
+          <ATTRIBUTES>
+            <ATT name="IsHidden">true</ATT>
+            <ATT name="LabelKey"><![CDATA[%notetype.DocumentPublisher.revisionHistory.label]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[DocumentPublisher.revisionHistory]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

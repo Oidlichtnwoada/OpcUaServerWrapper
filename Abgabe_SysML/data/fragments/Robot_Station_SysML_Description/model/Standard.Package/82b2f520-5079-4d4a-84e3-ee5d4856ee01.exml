@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Package Structure Diagram" version="4">
+  <OBJECT>
+    <ID name="Package Structure Diagram" mc="Standard.Package" uid="82b2f520-5079-4d4a-84e3-ee5d4856ee01"/>
+    <PID name="System Architecture" mc="Standard.Package" uid="df6912e1-3147-4db0-a88c-7bd11b9138bc"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Package Structure Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

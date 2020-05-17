@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Operators" version="4">
+  <OBJECT>
+    <ID name="Operators" mc="Standard.Package" uid="af39483f-dec0-459f-94d8-32dca061296f"/>
+    <PID name="Use Case Diagram" mc="Standard.Package" uid="e3dcd4e0-4d3d-4c98-b109-bc8c6c2c2c83"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Operators]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Operator" mc="Standard.Actor" uid="b8c3dc9c-b7d9-40ff-9883-835568e94a63"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Sequence Diagram" version="4">
+  <OBJECT>
+    <ID name="Sequence Diagram" mc="Standard.Package" uid="addeb0d1-683c-4142-b6ee-9508c2d86e9a"/>
+    <PID name="System Behaviour" mc="Standard.Package" uid="9f0965ed-c0db-4464-89af-60d53a18638e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Sequence Diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Assemble Program Sequence Diagram" mc="Standard.Interaction" uid="e3c307b6-dc5c-4bfb-9353-b4b1554e863e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Items and Flows diagram" version="4">
+  <OBJECT>
+    <ID name="Items and Flows diagram" mc="Standard.StaticDiagram" uid="50025773-cd07-4967-8f13-0e98bbc6e7d2"/>
+    <PID name="Items and Flows" mc="Standard.Package" uid="aed75fc9-907c-4645-8c7c-72d8b4dc5628"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">132</ATT>
+      <ATT name="UiData"><![CDATA[eJztU1FPIjEQ/ivNvlNWUFcTxChriHEVAqfJPZnZ7YDVbkvaQdl/f10W7oQLGzTmfLmnttP5Zuab+aZzvsgVe0XrpNFnwQEPA3be7QzSZ8yISeFNAaNihmeBsVOeG4FKGi4kTC3kHIUkY7kjIPnCUWGOmlz1ztZO/Xy8fMfVO2A5PBv7+DtpGHQ7Q2tmaKlgGnKfS0Fh5hQDgf97ADXHVRF6rlTQ7Haaa8Bf0DEVCoMNCq06Cq70dzwzFnmF3aO+HrgMBIp1sqsFjXCyZ5Y7H2KFZLigOL32NS6v5UXgBOaKtkg2Kzp1xC0qIBS+jq2e3ZYm9lpayvaAFmAF35gJOwrD1lEUtRuZCKPG4elx1DiZHLQbIZ6epGl2jJFo1fddgaMbbd50AimqrRLGZKWeemNzaa2lYRRe657JZ8ZJ8gP4fKjek1TCYhkhka5s3urYiUikfnH7u19OYwtvvpwECrSbomvX7s16U0SFd1yVEfyqbAT8N5vyMdQ3y0yKHXqI+zy5+Hk1ery86N30R4P7u/hrJLLH6r0f2h/5vBPD4X8xfI8YfgyGX62CnV+/ADzwiPk=]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAIAAAAmdTLBAAAAGElEQVR4nGP4TxlgGNU/qn9U/6j+EaofAB8cJiE1IQRUAAAAAElFTkSuQmCC]]></ATT>
+      <ATT name="Name"><![CDATA[Items and Flows diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="BlockDiagram" mc="Infrastructure.Stereotype" uid="00bc42ac-0000-1016-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="41885921-96d5-4478-9e58-fa9e2e849629"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>SysML Block diagrams can be used for defining the types of possible connection between SysML blocks i.e. the interfaces, items and all&nbsp;their properties in order to refer to them when modelling association or connector for example.</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

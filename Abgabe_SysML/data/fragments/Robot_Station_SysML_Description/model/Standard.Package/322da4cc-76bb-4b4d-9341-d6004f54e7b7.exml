@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="System Requirements" version="4">
+  <OBJECT>
+    <ID name="System Requirements" mc="Standard.Package" uid="322da4cc-76bb-4b4d-9341-d6004f54e7b7"/>
+    <PID name="Robot_Station_SysML_Description" mc="Standard.Package" uid="d89dab5e-dd08-4bf8-881b-c3af85ee2a13"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[System Requirements]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Functional Requirements" mc="Standard.Package" uid="db2314f2-4dc9-4968-8264-bc4993311407"/>
+        <COMPID name="Non-Functional Requirements" mc="Standard.Package" uid="9630e44c-3f00-4f88-ac51-fa1e069c2b82"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

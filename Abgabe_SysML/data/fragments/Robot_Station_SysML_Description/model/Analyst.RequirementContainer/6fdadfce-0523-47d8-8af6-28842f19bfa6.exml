@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Funtional Requirements" version="4">
+  <OBJECT>
+    <ID name="Funtional Requirements" mc="Analyst.RequirementContainer" uid="6fdadfce-0523-47d8-8af6-28842f19bfa6"/>
+    <PID name="System Requirements" mc="Analyst.AnalystProject" uid="998e99c0-135d-4c91-9b3b-64b82f200379"/>
+    <ATTRIBUTES>
+      <ATT name="Definition"></ATT>
+      <ATT name="Name"><![CDATA[Funtional Requirements]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedContainer">
+        <COMPID name="Requirements" mc="Analyst.RequirementContainer" uid="9a4ce6bb-fedf-43d6-a20b-0164c112cc20"/>
+        <COMPID name="Testcases" mc="Analyst.RequirementContainer" uid="9c4afaed-600d-4324-b1fb-b6df82289e63"/>
+      </COMP>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Analyst.AnalystPropertyTable" uid="9545ca33-72f7-452b-8a92-d7793ced454d"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Mon Apr 06 09:04:36 CEST 2020
+Origin=\ 
+Risk=Low
+Target\ Release=0
+Stability=Low
+Cost=0
+Benefit=Critical
+Documentation=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Functionality" mc="Infrastructure.PropertyTableDefinition" uid="00080cf0-0000-001a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="Scope.Editor.SavedState" mc="Infrastructure.PropertyTable" uid="077d4258-e340-41bc-8ec2-8fea2eb8e7f3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Scope.Editor.SavedState]]></ATT>
+            <ATT name="Content"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Functional Requirement Diagram" mc="Standard.StaticDiagram" uid="a1422971-b8d5-4e42-aa35-0776ba1304f5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
