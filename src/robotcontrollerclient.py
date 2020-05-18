@@ -118,7 +118,7 @@ class RobotControllerClient:
                 sleep(1)
 
     def read_input(self, index, robot_number=1, slot_number=1):
-        value = self.process_request(f'{robot_number};{slot_number};IN{index}');
+        value = self.process_request(f'{robot_number};{slot_number};IN{index}')[0];
         print(value)
         return int(value)%2
 
