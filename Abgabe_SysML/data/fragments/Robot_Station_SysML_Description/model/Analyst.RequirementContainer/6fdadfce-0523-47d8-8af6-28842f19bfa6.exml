@@ -9,6 +9,9 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedRequirement">
+        <COMPID name="Operator is able to control robot via OPC UA" mc="Analyst.Requirement" uid="a1110b5b-e36b-406c-9aae-09317ef7cc31"/>
+      </COMP>
       <COMP relation="OwnedContainer">
         <COMPID name="Requirements" mc="Analyst.RequirementContainer" uid="9a4ce6bb-fedf-43d6-a20b-0164c112cc20"/>
         <COMPID name="Testcases" mc="Analyst.RequirementContainer" uid="9c4afaed-600d-4324-b1fb-b6df82289e63"/>

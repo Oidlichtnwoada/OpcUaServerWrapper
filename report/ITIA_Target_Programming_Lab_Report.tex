@@ -27,7 +27,8 @@ The parametric diagram described the calculation of the line distance between tw
 \subsection{Internal Block Diagram}
 The internal block diagram should display the connectivity between components. For the programming part it would be required in reality to model this down to the individual components of the station, like for example the spring push out piston. This was omitted and abstracted in the description by only specifying the connectors that are present on the robot. If a developer needs to know the pin that is used for a specific part a chart or specification of the connector standard can be found in the datasheet of the robot controller. The internal block diagram is therefore regarded as the viewpoint of a system integrator that needs to connect modules but not individual components.
 
-
+\subsection{Assignment addition}
+In phase 2 of this lab it was required to implement an OPC UA interface that can be used to control certain aspects of the robot without it running a specific program. For this a Raspberry Pi running an OPC UA server was added to the robot station. This change can be seen in the Functional Requirements where the control capabilities were added as a requirement that needs to be satisfied by the controller, as well as in the block and internal block diagram were the component was added to the right place. Since the actual assembly process is still carried out the same way and only external controls were added the behavioral diagrams stay the same as in phase 1.
 \section{I/O Mapping}
 The Robot station primarily consists of the robot arm with a multi-functional gripper and sensors and actuators located in two modules. Since the robot arm is specifically connected and controlled by the robot controller it is separated in this report from the I/Os of the other two modules namely the assembly and handling stations. 
 

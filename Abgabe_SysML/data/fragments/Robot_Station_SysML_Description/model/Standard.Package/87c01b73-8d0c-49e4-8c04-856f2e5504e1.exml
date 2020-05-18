@@ -247,6 +247,44 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="Telnet" mc="Standard.InformationFlow" uid="f87ba443-3979-4af5-be5a-77c00e5d48b2"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Telnet]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="Raspberry Pi Instance" mc="Standard.Instance" uid="3ffc675a-7abc-40ce-9f20-2d8e874ccb2a"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="Robot Controller Instance" mc="Standard.Instance" uid="506d2aa7-0fbd-4491-bf0f-2436d243eac3"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.InformationFlow" uid="b9b4087d-6e9f-4567-beac-7e370fb32361"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="Robot Controller Instance" mc="Standard.Instance" uid="506d2aa7-0fbd-4491-bf0f-2436d243eac3"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="Raspberry Pi Instance" mc="Standard.Instance" uid="3ffc675a-7abc-40ce-9f20-2d8e874ccb2a"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Classes" mc="Standard.Package" uid="0e1dfd77-265f-4a91-9d75-a34c2594491a"/>
