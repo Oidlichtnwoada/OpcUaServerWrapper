@@ -52,6 +52,8 @@
         <COMPID name="Non-Black Body" mc="Standard.Class" uid="6ac0b2d6-8faf-4865-9b26-a0320e77661e"/>
         <COMPID name="Metallic Piston" mc="Standard.Class" uid="6194a8bf-4dc6-4a9f-88dd-fb14dec05dd1"/>
         <COMPID name="Polymer Piston" mc="Standard.Class" uid="2dae719a-a2cf-4b83-a3fa-7d441256c443"/>
+        <COMPID name="Raspberry Pi" mc="Standard.Class" uid="d133d999-2289-4e6f-b310-bb361b090a84"/>
+        <COMPID name="OPC UA Server" mc="Standard.Class" uid="c5e34fe8-ee58-45cb-aa0c-b9c143faaae2"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
