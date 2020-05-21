@@ -119,11 +119,18 @@ class RobotControllerClient:
 
     def read_input(self, index, robot_number=1, slot_number=1):
         value = self.process_request(f'{robot_number};{slot_number};IN{index}')[0];
-        print(value)
         return int(value)%2
 
     def write_output(self, index, value, robot_number=1, slot_number=1):
-        self.process_request(f'{robot_number};{slot_number};OUT={index};{value:04x}')
+        outputValue = int(self.process_request(f'{robot_number};{slot_number};OUT{index}')[0])
+
+        outputValue &= ~1
+
+        if value == 1:
+            outputValue |= 1
+
+        self.process_request(f'{robot_number};{slot_number};OUT={index};{outputValue:04x}')
+
 
     def open_gripper(self, hand_number=1, robot_number=1, slot_number=1):
         self.process_request(f'{robot_number};{slot_number};HNDON{hand_number}')
