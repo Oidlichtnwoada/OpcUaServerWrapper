@@ -1702,6 +1702,7 @@
     <UAObject SymbolicName="DefaultBinary" NodeId="ns=3;i=1162" BrowseName="Default Binary">
         <DisplayName>Default Binary</DisplayName>
         <References>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=3;i=1155</Reference>
             <Reference ReferenceType="HasDescription">ns=3;i=1160</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
@@ -1709,6 +1710,7 @@
     <UAObject SymbolicName="DefaultXML" NodeId="ns=3;i=1163" BrowseName="Default XML">
         <DisplayName>Default XML</DisplayName>
         <References>
+            <Reference ReferenceType="HasEncoding" IsForward="false">ns=3;i=1155</Reference>
             <Reference ReferenceType="HasDescription">ns=3;i=1161</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
         </References>
