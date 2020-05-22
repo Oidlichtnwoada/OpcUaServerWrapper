@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Multi-Function Gripper Cost" version="4">
+  <OBJECT>
+    <ID name="Multi-Function Gripper Cost" mc="Analyst.Requirement" uid="592b4a03-61d8-4aa1-ab6d-42697071b23f"/>
+    <PID name="Requirements" mc="Analyst.RequirementContainer" uid="24247466-4c2a-4f36-80bc-f90b5efa6d3d"/>
+    <ATTRIBUTES>
+      <ATT name="Version">0</ATT>
+      <ATT name="Definition"><![CDATA[The cost of the multi-function gripper must not exceed 2.000€ incl. VAT.]]></ATT>
+      <ATT name="Name"><![CDATA[Multi-Function Gripper Cost]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Analyst.AnalystPropertyTable" uid="85cacc2c-c87a-4d4a-8058-1cec1b4b35a3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Fri Apr 10 14:21:15 CEST 2020
+Origin=\ 
+Risk=Low
+Target\ Release=0
+Stability=Low
+Cost=0
+Benefit=Critical
+Documentation=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Functionality" mc="Infrastructure.PropertyTableDefinition" uid="00080cf0-0000-001a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

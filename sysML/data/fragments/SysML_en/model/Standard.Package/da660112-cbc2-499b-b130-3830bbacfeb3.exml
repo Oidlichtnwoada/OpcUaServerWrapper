@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Data Types" version="4">
+  <OBJECT>
+    <ID name="Data Types" mc="Standard.Package" uid="da660112-cbc2-499b-b130-3830bbacfeb3"/>
+    <PID name="Model" mc="Standard.Package" uid="272e8721-d446-4265-aeab-1d807b825090"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Data Types]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="Data Types diagram" mc="Standard.StaticDiagram" uid="8611acaf-bf38-40dd-8cda-c07decbba196"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="033697cd-2a47-458f-8867-27f8a6a86adf"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>System data types shall be modeled here mainly by defining the set of type defined. Diagrams: Use &quot;Block diagrams&quot; to model the set of available data type.</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

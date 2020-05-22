@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TESTCASE" version="4">
+  <OBJECT>
+    <ID name="TESTCASE" mc="Analyst.Requirement" uid="200cf84e-7049-47a7-a930-4fe4c8ad1f72"/>
+    <PID name="Testcases" mc="Analyst.RequirementContainer" uid="9c4afaed-600d-4324-b1fb-b6df82289e63"/>
+    <ATTRIBUTES>
+      <ATT name="Version">0</ATT>
+      <ATT name="Definition"><![CDATA[Operator should refill all workpiece parts, when the robot is not operating. Then the operator should start the assemble program and after 10 minutes, 4 fully assembled workpieces should be ready to be taken by the operator while the robot is stopped.]]></ATT>
+      <ATT name="Name"><![CDATA[TESTCASE]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Analyst.AnalystPropertyTable" uid="5c6e6e25-7608-4522-b9e8-ee7dade375fc"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Fri Apr 10 15:24:42 CEST 2020
+Origin=\ 
+Risk=Low
+Target\ Release=0
+Stability=Low
+Cost=0
+Benefit=Critical
+Documentation=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Functionality" mc="Infrastructure.PropertyTableDefinition" uid="00080cf0-0000-001a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="8ffbdf1c-c22b-48c9-bf12-5c9a89a76d92"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Operator must be able to manage the assembling process" mc="Analyst.Requirement" uid="ac8f023f-0f7c-475f-aa4b-887c511d0a06"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="verify" mc="Infrastructure.Stereotype" uid="01ec12fc-0000-0229-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

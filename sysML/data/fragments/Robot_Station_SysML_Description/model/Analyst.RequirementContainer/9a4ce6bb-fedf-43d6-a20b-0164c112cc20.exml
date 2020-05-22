@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Requirements" version="4">
+  <OBJECT>
+    <ID name="Requirements" mc="Analyst.RequirementContainer" uid="9a4ce6bb-fedf-43d6-a20b-0164c112cc20"/>
+    <PID name="Funtional Requirements" mc="Analyst.RequirementContainer" uid="6fdadfce-0523-47d8-8af6-28842f19bfa6"/>
+    <ATTRIBUTES>
+      <ATT name="Definition"></ATT>
+      <ATT name="Name"><![CDATA[Requirements]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedRequirement">
+        <COMPID name="Operator is able to start the assemble program" mc="Analyst.Requirement" uid="5ec638cd-fd60-48fd-8f16-c064e6852583"/>
+        <COMPID name="Operator is able to stop the assemble program" mc="Analyst.Requirement" uid="297978dd-a1c9-4b83-ac66-b3924adae834"/>
+        <COMPID name="Operator must be able to manage the assembling process" mc="Analyst.Requirement" uid="ac8f023f-0f7c-475f-aa4b-887c511d0a06"/>
+        <COMPID name="Operator is able to retrieve assembled workpieces" mc="Analyst.Requirement" uid="8571a772-71a0-4041-834d-03a54e71ef84"/>
+        <COMPID name="Operator is able to refill workpiece assemble part" mc="Analyst.Requirement" uid="4bcdb274-c54a-460b-b361-71d624ee17cf"/>
+        <COMPID name="The operator must be able to teach all reachable robot arm positions" mc="Analyst.Requirement" uid="a26e7fcd-bc13-4dff-ae92-ef12afb594bd"/>
+        <COMPID name="The operator must be able to put the robot arm in the predefined safety position" mc="Analyst.Requirement" uid="0fda9a57-5c31-4a06-9191-968241683a3c"/>
+        <COMPID name="The robot station assembles workpieces when the assemble program is started and parts are available" mc="Analyst.Requirement" uid="2fc3467d-34bc-4f70-8ef3-4ceb8334cd21"/>
+        <COMPID name="Maximum Robot Arm Load 3kg " mc="Analyst.Requirement" uid="3f98d408-7a62-40ef-8987-9dce6d4f91d2"/>
+        <COMPID name="Maximum Robot Arm Speed 5m/s" mc="Analyst.Requirement" uid="6ac449b7-e0f4-478c-b825-52c4c4fd25e8"/>
+        <COMPID name="Maximum Robot Arm Radius 0.5m" mc="Analyst.Requirement" uid="c2f26f78-a011-439c-9a86-d9de9ac8643f"/>
+      </COMP>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Analyst.AnalystPropertyTable" uid="889ec5c8-624c-47bd-8dd1-5d3928c79989"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Fri Apr 10 15:14:50 CEST 2020
+Origin=\ 
+Risk=Low
+Target\ Release=0
+Stability=Low
+Cost=0
+Benefit=Critical
+Documentation=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Functionality" mc="Infrastructure.PropertyTableDefinition" uid="00080cf0-0000-001a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Non-Functional Requirements" version="4">
+  <OBJECT>
+    <ID name="Non-Functional Requirements" mc="Standard.Package" uid="9630e44c-3f00-4f88-ac51-fa1e069c2b82"/>
+    <PID name="System Requirements" mc="Standard.Package" uid="322da4cc-76bb-4b4d-9341-d6004f54e7b7"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Non-Functional Requirements]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

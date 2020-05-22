@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Equations" version="4">
+  <OBJECT>
+    <ID name="Equations" mc="Standard.Package" uid="d129d848-637b-402f-935b-de6c0ca10fa4"/>
+    <PID name="Model" mc="Standard.Package" uid="272e8721-d446-4265-aeab-1d807b825090"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Equations]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Constraint" mc="Standard.Class" uid="55eda048-bf15-4d1b-a69c-e240c3bd763c"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="48e7e018-a8d6-4e44-8a89-096129a9a697"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>System equations shall be modeled here in terms of contraints blocks, contraint properties and contraints. Diagrams: Use &quot;Block diagrams&quot; to expose the set of existing contraint. Use &quot;&#39;Internal Block diagrams&quot; for modelling the equation architecture.</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

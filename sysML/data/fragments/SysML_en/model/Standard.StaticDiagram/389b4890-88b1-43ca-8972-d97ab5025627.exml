@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Architecture diagram" version="4">
+  <OBJECT>
+    <ID name="Architecture diagram" mc="Standard.StaticDiagram" uid="389b4890-88b1-43ca-8972-d97ab5025627"/>
+    <PID name="Architecture" mc="Standard.Package" uid="9f662687-16b4-4336-b032-95521bd89063"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">185</ATT>
+      <ATT name="UiData"><![CDATA[eJztmm1v2joUx79KhPaWEALl4dJ1ooBYVSgV2Sbd+wY5iaFeHRvZpm366WcHwi1pl4YQQlVFqlRywMdPv//JOXHOvz15WHuAjCNKvpaqulHSvl2cT+zf0BEacqWppAl/Cb+WKFvoHnUhRlR3EVgw4OnQRYIynQsg0L0OMfQgEXx97YQ/GnpWcN1fX5c0D/ymbLbt1ChdnN8yuoRM+BoBnuwLA5+uRB8IIL/7BfAKbgZBVhiXKhfnlbDBq6aW8DEs7UzBjJsCV7/nukMZ1NdtE4yvB7gDXOiGnQ2exBTOE/ZyI11sWmrwSfTtKznG4KP64MI5WGERmWRlPZ24iTOIgYCuHEdkzcbKpD0oi1oeQFzAXH1nT7Raq23XW22j3GrZ1XK95oByq900y267CewzwzxrmM34dceAi2tCH8kI2BBHhmAJhshCGiuBNXYaFMMr0qPeknIk5Aakd9W7Q9hlUHkYIS52mKilwNrB4PlZ4tyTc+UHYTyVwwBkoQjY7Evd6Ki/VqdZ3Zvv+tH5VnCvlRQ7tt6oa1mz6eB2OrBm40l/EJn2gKy8fxIN8hr6X6ZwySCXKw8UBmPZZLtaV+PucHB0iQT7rNVqbr1pthtlx3QMKQ2jWbadmlFutkzQUsqYu+0MpGH5XEDv4wjk7FCB3DLkAebfBPuWqVaMTqCURm1vpTSSKkW6evIPlku9QDQW0TFARPFxIKrNFKgqr3wJHHgH5c4xCe1NaPkeWPJPU1r5wtko4IyFc41BAof8jj7OkPPK0SWVPQGyXZc5wBzGzzRwdQ/9R8rcDLwJ4NzP5LIwSN/xJtgqydDwGxuwvytgc8GAI1LMcAvpC920092pOEdzFCi/t72YQo6egY3hkNHVMv8QUDWKGPCRYsCBN6ZqmuIZCNm5vRJwoRiUeHZDw6mgTFw/ZwOlFEFBZRyVu0CkYbSy+RcfWKtpimTlMCjYQnwnoeFU+CYujwt888n6obij7rHZTVO/IiJzJSLTDpnDOGIlkRh6VxubFdpOQHDOZWtB8DsEh0wcmh6kKVwTMXqqUJtzCVv9ZPlrhogeO7ymKboSofsfJScIsWbOhddnIzfzEKswyBjfZGSbaWo2RAhkwTOFAGl5cfgZkVLGQj2H3Gxsef+DIbOo3D4W1QEaB2YNZpqq7C+AnihPMHMuyczouWXBZa7ZgpmuGHsTWchPlCHkXIQVzH6oDOH1V5F+EP8lr5ADUpyPJO/l9dm6voHrnewhelb+pkxT1aMeWMDtaWpwQKT0qqzqRNVS1jUXWb8EcFbt1GsdM5pzJJByzmVq8RpAvJItOVWMkUgi589w2Jp0bClPWzMJZyNE7nlMzIz8/HLRZ+BR7uYI+DLq7Mot/llBGEjctQOuY+VCxpAdj/nc7/drdeI3LlGU2lBP/aE+6v47mM4uu73r4XTy86af9Y3yr15ebtr//Lx88TL2SUtBw/Fo+DG5zS1f+gOHVDNO]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABbCAIAAABF8bSrAAABaUlEQVR4nO3WwXHCMBCFYZ9SmwtSC+nCjeTkSSdc0wBXCJYl7QoYsMfYD/O/8UERUqSPtTQ0px2l2XoDSwaMasCoBoxqwKgGjGrAqAaMasCoBoxqwKgGjGo+G/Pz/bXaA2Y65vj3+9IHDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMDsH7POA2YvAaMaMKoBoxowqnkGc+jaZkzbHSYu0Ifpc+bmMWaghP502ddUzjBXCTMQosZ1pZ78Rxxo6lc64uBS4eQbsV1I3X0a4tZbGuNrYjSpmbtsNWy7zCmtyBsGjNL8H+Zwnjkz5htOS/hy2Lq4PRiMrealXQRXWF/5hTEeVNb734VZ1lwTeSdls+7TPGQjTBGZtdsQ2nrVtOvyGl1Xxg9eEVMD/MH3dYnDbjfvn5lVK2PfEHvN1tecOVp5WJpbvWrVbbbJa+Yzd8nXZR7m5tW1fT7ut9nbBIxqwKgGjGrAqAaMasCo5gygKo5k64QJdwAAAABJRU5ErkJggg==]]></ATT>
+      <ATT name="Name"><![CDATA[Architecture diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <ID name="System" mc="Standard.Class" uid="33d47296-c2c0-4307-bc30-782a80256fd9"/>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="BlockDiagram" mc="Infrastructure.Stereotype" uid="00bc42ac-0000-1016-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="c6b95cf9-d287-4c04-8106-4a5e34487b51"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[<p>SysML Block diagrams are mainly used to define SysML blocks features and&nbsp;relationships between blocks such as associations, generalizations, and dependencies. It captures the definition of blocks in terms of operations, and relationships such as a system hierarchy or a system classification tree.</p><p>&nbsp;</p>
+]]></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

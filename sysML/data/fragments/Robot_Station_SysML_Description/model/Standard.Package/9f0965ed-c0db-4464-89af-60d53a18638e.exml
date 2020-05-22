@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="System Behaviour" version="4">
+  <OBJECT>
+    <ID name="System Behaviour" mc="Standard.Package" uid="9f0965ed-c0db-4464-89af-60d53a18638e"/>
+    <PID name="UML-BPMN" mc="Standard.Project" uid="0d6dead2-0a57-426e-95d3-4477e3c0199a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[System Behaviour]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="State Machine Diagram" mc="Standard.StateMachine" uid="1938eabc-bda2-41ae-965d-ad470ef9b70a"/>
+        <COMPID name="Activity Diagram" mc="Standard.Activity" uid="7ff4cabc-b53e-426b-9304-182aa1459c60"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Use Case Diagram" mc="Standard.Package" uid="e3dcd4e0-4d3d-4c98-b109-bc8c6c2c2c83"/>
+        <COMPID name="Sequence Diagram" mc="Standard.Package" uid="addeb0d1-683c-4142-b6ee-9508c2d86e9a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

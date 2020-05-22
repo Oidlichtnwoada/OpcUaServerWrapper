@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Requirements" version="4">
+  <OBJECT>
+    <ID name="Requirements" mc="Analyst.RequirementContainer" uid="24247466-4c2a-4f36-80bc-f90b5efa6d3d"/>
+    <PID name="Non-Functional Requirements" mc="Analyst.RequirementContainer" uid="dfbd3097-089e-4d2c-8f9d-1162d7486d0e"/>
+    <ATTRIBUTES>
+      <ATT name="Definition"></ATT>
+      <ATT name="Name"><![CDATA[Requirements]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedRequirement">
+        <COMPID name="MPS Robot Station Cost" mc="Analyst.Requirement" uid="7d02d47c-16eb-4eb5-8f9f-5a8e47d64b88"/>
+        <COMPID name="Multi-Function Gripper Cost" mc="Analyst.Requirement" uid="592b4a03-61d8-4aa1-ab6d-42697071b23f"/>
+        <COMPID name="Robot RV-2FB Cost" mc="Analyst.Requirement" uid="d4abd453-4e40-4aa7-8543-fbfc657a27f9"/>
+        <COMPID name="Robot Controller Cost" mc="Analyst.Requirement" uid="da5494e4-d3c3-424f-9cb0-d3b2c6f82538"/>
+        <COMPID name="Robot Handling Station Cost" mc="Analyst.Requirement" uid="9e69e7b5-030e-4a9c-bb60-51704ae067ed"/>
+        <COMPID name="Robot Assemble Station Cost" mc="Analyst.Requirement" uid="f6c297a5-99b3-4017-a03e-cba272d54dc8"/>
+        <COMPID name="MPS Robot Station Size" mc="Analyst.Requirement" uid="802d8282-c368-44a5-ac6e-85a25835ef23"/>
+        <COMPID name="MPS Robot Station Noise" mc="Analyst.Requirement" uid="92a8707e-f3f7-4c72-9c9f-f888d46e72e3"/>
+        <COMPID name="MPS Robot Station Vibration" mc="Analyst.Requirement" uid="3e13bc59-4e1b-461f-93a4-884397fecddb"/>
+        <COMPID name="MPS Robot Station Efficiency" mc="Analyst.Requirement" uid="a6d5fd8a-809f-4bfa-bd60-feb75f806fc9"/>
+        <COMPID name="MPS Robot Station Reliability" mc="Analyst.Requirement" uid="89407f56-1854-4683-9ac8-4d1bad66baa0"/>
+      </COMP>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Analyst.AnalystPropertyTable" uid="917510b9-e00e-40d2-a761-9032686ac671"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Fri Apr 10 14:47:08 CEST 2020
+Origin=\ 
+Risk=Low
+Target\ Release=0
+Stability=Low
+Cost=0
+Benefit=Critical
+Documentation=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Functionality" mc="Infrastructure.PropertyTableDefinition" uid="00080cf0-0000-001a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

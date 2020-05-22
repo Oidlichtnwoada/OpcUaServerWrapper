@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="The robot station assembles workpieces when the assemble program is started and parts are available" version="4">
+  <OBJECT>
+    <ID name="The robot station assembles workpieces when the assemble program is started and parts are available" mc="Analyst.Requirement" uid="2fc3467d-34bc-4f70-8ef3-4ceb8334cd21"/>
+    <PID name="Requirements" mc="Analyst.RequirementContainer" uid="9a4ce6bb-fedf-43d6-a20b-0164c112cc20"/>
+    <ATTRIBUTES>
+      <ATT name="Version">0</ATT>
+      <ATT name="Definition"></ATT>
+      <ATT name="Name"><![CDATA[The robot station assembles workpieces when the assemble program is started and parts are available]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="AnalystProperties">
+        <OBJECT>
+          <ID name="" mc="Analyst.AnalystPropertyTable" uid="08fc180e-ad54-4f49-9537-4f686b01dbd3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="Content"><![CDATA[#Fri Apr 10 15:17:08 CEST 2020
+Origin=\ 
+Risk=Low
+Target\ Release=0
+Stability=Low
+Cost=0
+Benefit=Critical
+Documentation=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Functionality" mc="Infrastructure.PropertyTableDefinition" uid="00080cf0-0000-001a-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

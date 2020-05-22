@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Model" version="4">
+  <OBJECT>
+    <ID name="Model" mc="Standard.Package" uid="272e8721-d446-4265-aeab-1d807b825090"/>
+    <PID name="UML-BPMN" mc="Standard.Project" uid="bf86c63d-3c93-409a-8b5b-ddec25227159"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Model]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Use Cases" mc="Standard.Package" uid="34561248-561f-4637-a84b-39674aef0354"/>
+        <COMPID name="Architecture" mc="Standard.Package" uid="9f662687-16b4-4336-b032-95521bd89063"/>
+        <COMPID name="Items and Flows" mc="Standard.Package" uid="aed75fc9-907c-4645-8c7c-72d8b4dc5628"/>
+        <COMPID name="Data Types" mc="Standard.Package" uid="da660112-cbc2-499b-b130-3830bbacfeb3"/>
+        <COMPID name="Equations" mc="Standard.Package" uid="d129d848-637b-402f-935b-de6c0ca10fa4"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Overview diagram" mc="Standard.StaticDiagram" uid="9f956a22-5f7f-4bfe-b24e-3b397b10e7cf"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
