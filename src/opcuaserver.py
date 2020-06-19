@@ -192,7 +192,7 @@ class OpcUaServerForRobotController:
             errors = []
             error_log_entries = self.rc_client.get_error_log_entries(number_of_errors)
             for error_log_entry in error_log_entries:
-                errors.append(error_log_entry[3])
+                errors.append(error_log_entry)
             return errors
         except RobotControllerError as rce:
             return self.error_response(rce.status_code)
