@@ -54,7 +54,6 @@ class OpcUaServerForRobotController:
                              nodeid, self.resume_program)
 
     def periodic_routine(self):
-        self.rc_client.reset_error()
         self.opc_ua_server.get_node('ns=4;i=1033').set_data_value(self.rc_client.get_override())
         self.opc_ua_server.get_node('ns=4;i=1122').set_data_value(self.rc_client.is_running())
         for index, program_name in enumerate(self.rc_client.program_list):
