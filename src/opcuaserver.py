@@ -199,7 +199,7 @@ class OpcUaServerForRobotController:
 
     @uamethod
     def restart_server(self, parent):
-        system('sudo shutdown -r -h 1')
+        system('sudo shutdown -r -h -t sec 10')
 
 
 class PeriodicWorker(Thread):
