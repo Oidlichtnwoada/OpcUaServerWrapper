@@ -1,5 +1,6 @@
 from threading import Thread
 from time import sleep
+from os import system
 
 from opcua import Server, ua, uamethod
 from robotcontrollerclient import RobotControllerClient as RCClient, RobotControllerError
@@ -13,7 +14,6 @@ class OpcUaServerForRobotController:
         self.opc_ua_server.set_endpoint(f'opc.tcp://{ip_os}:{port_os}/')
         self.opc_ua_server.set_security_policy([ua.SecurityPolicyType.NoSecurity])
         self.opc_ua_server.set_server_name(self.__class__.__name__)
-        self.opc_ua_server.import_xml('../models/Opc.Ua.NodeSet2.xml')
         self.opc_ua_server.import_xml('../models/Opc.Ua.Di.NodeSet2.xml')
         self.opc_ua_server.import_xml('../models/Opc.Ua.Robotics.NodeSet2.xml')
         self.opc_ua_server.import_xml('../models/Tuw.Auto.MitsubishiElectricRobot.NodeSet2.xml')
@@ -29,7 +29,8 @@ class OpcUaServerForRobotController:
         self.link_method('ns=4;i=1134', self.close_gripper)
         self.link_method('ns=4;i=1131', self.open_gripper)
         self.link_method('ns=4;i=1137', self.move)
-        self.link_method('ns=4;i=1140', self.get_error_log)
+        self.link_method('ns=4;i=1140', self.get_recent_errors)
+        self.link_method('ns=4;i=1164', self.restart_server)
         self.generate_task_controls()
 
     def link_method(self, node_id, method):
@@ -186,26 +187,19 @@ class OpcUaServerForRobotController:
             return self.error_response(rce.status_code)
 
     @uamethod
-    def get_error_log(self, parent, num_error_logs):
+    def get_recent_errors(self, parent, number_of_errors):
         try:
-            RobotError = self.opc_ua_server.load_type_definitions()[1]['RobotError']
-            ua.extension_object_ids[RobotError.__name__] = ua.NodeId.from_string('ns=4;i=1155')
-            robot_errors = []
-            error_log_entries = self.rc_client.get_error_log_entries(num_error_logs)
-            for error_log in error_log_entries:
-                robot_error = RobotError()
-                robot_error.ErrorDate = error_log[0]
-                robot_error.ErrorTime = error_log[1]
-                robot_error.ErrorCode = int(error_log[2])
-                robot_error.ErrorText = error_log[3]
-                robot_error.ErrorLevel = int(error_log[4])
-                robot_error.ErrorProgram = error_log[5]
-                robot_error.ErrorLine = int(error_log[6])
-                robot_error.ErrorDetailNumber = int(error_log[7])
-                robot_errors.append(robot_error)
-            return robot_errors
+            errors = []
+            error_log_entries = self.rc_client.get_error_log_entries(number_of_errors)
+            for error_log_entry in error_log_entries:
+                errors.append(error_log_entry[3])
+            return errors
         except RobotControllerError as rce:
             return self.error_response(rce.status_code)
+
+    @uamethod
+    def restart_server(self, parent):
+        system('sudo shutdown -r -h 1')
 
 
 class PeriodicWorker(Thread):
