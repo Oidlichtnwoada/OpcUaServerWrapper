@@ -10,6 +10,7 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{multirow}
+\usepackage{a4wide}
 
 \pgfplotsset{compat=1.15}
 \title{ITIA\\Information Model Robot\\Lab Report}
@@ -125,25 +126,31 @@
 \begin{center}
 	\setlength\extrarowheight{4pt}
 	\small
-	\begin{tabularx}{\textwidth}{|p{5cm}|X|}
+	\begin{tabularx}{\textwidth}{|p{5cm}|p{4.5cm}|X|X|}
 		\hline
-		\multicolumn{2}{|c|}{\bf \color{black} \large OPC UA Methods}\\
+		\multicolumn{4}{|c|}{\bf \color{black} \large OPC UA Methods}\\
 		\hline\hline
-		\bf Method &\bf Description\\
+		\bf Method &\bf Description & \bf ObjectId & \bf MethodId\\
 		\hline\hline
-		OpenGripper() & Opens the multi function gripper\\
+		ReadInput(Index) & Returns the \texttt{Value} of the input at the given \texttt{Index}& ns=4;i=1066& ns=4;i=1067\\
 		\hline
-		CloseGripper() & Closes the multi function gripper\\
+		WriteOutput(Index, Value) & Sets the output at the given \texttt{Index} to the given \texttt{Value}& ns=4;i=1066 & ns=4;i=1111\\
 		\hline
-		Move(X,Y,Z,A,B,C) & Moves the robot arm to the given coordinates\\
+		GetMostRecentError() & Returns the most recent error that occurred & ns=4;i=1103 & ns=4;i=1105\\
 		\hline
-		GetErrorLog(NUMLOGS) & Returns the last NUMLOGS errors that occurred\\
+		GetRecentErrors(NumberOfErrors) & Returns the last \texttt{NumberOfErrors} errors that occurred& ns=4;i=1066 & ns=4;i=1140\\
 		\hline
-		ReadInput(INDEX) & Returns the state of the input at the given index\\
+		ResetError() & Resets the error state of the robot controller& ns=4;i=1102 & ns=4;i=1108\\
 		\hline
-		WriteOutput(INDEX, STATE) & Sets the output at the given INDEX to the given STATE\\
+		OpenGripper() & Opens the multi function gripper& ns=4;i=1130 & ns=4;i=1131\\
 		\hline
-		ResetError() & Resets the robot controller from the error state\\
+		CloseGripper() & Closes the multi function gripper& ns=4;i=1130& ns=4;i=1134\\
+		\hline
+		Move(X,Y,Z,A,B,C) & Translates the robot arm to the position (\texttt{X,Y,Z}) with the rotation (\texttt{A,B,C})& ns=4;i=1130 & ns=4;i=1137\\
+		\hline
+		MoveToSafePosition() & Moves the robot arm into the predefined safety position & ns=4;i=1113&ns=4;i=1115\\
+		\hline
+		RestartServer() & Reboots the OPC UA Gateway device & ns=0;i=2253& ns=4;i=1164\\
 		\hline
 	\end{tabularx}
 \end{center}
