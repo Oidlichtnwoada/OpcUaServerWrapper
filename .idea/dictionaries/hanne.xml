@@ -5,6 +5,7 @@
       <w>errorlogtop</w>
       <w>hndoff</w>
       <w>hndon</w>
+      <w>systemd</w>
     </words>
   </dictionary>
 </component>

@@ -1,0 +1,11 @@
+[Unit]
+Description=OPC UA Server For Robot Controller
+After=multi-user.target
+After=nss-lookup.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/OpcUaServerWrapper/scripts/update_repository_and_start_server.sh
+
+[Install]
+WantedBy=multi-user.target
