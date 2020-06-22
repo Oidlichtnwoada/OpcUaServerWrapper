@@ -213,6 +213,10 @@ INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty
 INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel.sty
 INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.sty
 INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.sty
+INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\tex\latex\a4wide\a4wide.sty
+INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\tex\latex\a4wide\a4wide.sty
+INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ntgclass\a4.sty
+INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ntgclass\a4.sty
 INPUT c:\Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\report\ITIA_Target_Programming_Lab_Report.aux
 INPUT c:\Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\report\ITIA_Target_Programming_Lab_Report.aux
 OUTPUT c:\Users\hanne\OneDrive\TU\2020S_Semester\Information Technology in Automation VU\OpcUaServerWrapper\report\ITIA_Target_Programming_Lab_Report.aux
@@ -297,3 +301,5 @@ INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfon
 INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt9.pfb
+INPUT C:\Users\hanne\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt9.pfb
