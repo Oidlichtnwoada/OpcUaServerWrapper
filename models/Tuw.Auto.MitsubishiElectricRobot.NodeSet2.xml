@@ -3,10 +3,10 @@
     <NamespaceUris>
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
         <Uri>http://opcfoundation.org/UA/Robotics/</Uri>
-        <Uri>https://auto.tuwien.ac.at/MitsubishiElectricRobot</Uri>
+        <Uri>http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://auto.tuwien.ac.at/MitsubishiElectricRobot" PublicationDate="2019-06-13T00:00:00Z" Version="1.00">
+        <Model ModelUri="http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/" PublicationDate="2019-06-13T00:00:00Z" Version="1.00">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2019-05-01T00:00:00Z" Version="1.04"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2019-05-01T00:00:00Z" Version="1.02"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/Robotics/" PublicationDate="2019-05-06T00:00:00Z" Version="1.0.0"/>
@@ -31,8 +31,8 @@
             <si:Generator Product="SiOME" Edition="Standard" Version="2.0.4"/>
         </Extension>
     </Extensions>
-    <UAObject SymbolicName="https___auto_tuwien_ac_at_MitsubishiElectricRobot" NodeId="ns=3;i=1000" BrowseName="3:https://auto.tuwien.ac.at/MitsubishiElectricRobot">
-        <DisplayName>https://auto.tuwien.ac.at/MitsubishiElectricRobot</DisplayName>
+    <UAObject SymbolicName="https___auto_tuwien_ac_at_MitsubishiElectricRobot" NodeId="ns=3;i=1000" BrowseName="3:http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/">
+        <DisplayName>http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/</DisplayName>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
@@ -62,7 +62,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:String>https://auto.tuwien.ac.at/MitsubishiElectricRobot</uax:String>
+            <uax:String>http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/</uax:String>
         </Value>
     </UAVariable>
     <UAVariable DataType="String" NodeId="ns=3;i=1004" BrowseName="NamespaceVersion" ParentNodeId="ns=3;i=1000">
@@ -1553,7 +1553,7 @@
     </UAVariable>
     <UAVariable DataType="ByteString" NodeId="ns=3;i=1156" BrowseName="3:TypeDictionary" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>TypeDictionary</DisplayName>
-        <Description>Collects the data type descriptions of https://auto.tuwien.ac.at/MitsubishiElectricRobot</Description>
+        <Description>Collects the data type descriptions of http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">i=93</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
@@ -1569,12 +1569,12 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:String>https://auto.tuwien.ac.at/MitsubishiElectricRobot</uax:String>
+            <uax:String>http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/</uax:String>
         </Value>
     </UAVariable>
     <UAVariable DataType="ByteString" NodeId="ns=3;i=1158" BrowseName="3:TypeDictionary" UserAccessLevel="3" AccessLevel="3">
         <DisplayName>TypeDictionary</DisplayName>
-        <Description>Collects the data type descriptions of https://auto.tuwien.ac.at/MitsubishiElectricRobot</Description>
+        <Description>Collects the data type descriptions of http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/</Description>
         <References>
             <Reference ReferenceType="HasComponent" IsForward="false">i=92</Reference>
             <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
@@ -1587,7 +1587,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
         </References>
         <Value>
-            <uax:String>https://auto.tuwien.ac.at/MitsubishiElectricRobot/Types.xsd</uax:String>
+            <uax:String>http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/Types.xsd</uax:String>
         </Value>
     </UAVariable>
     <UAMethod NodeId="ns=3;i=1140" BrowseName="3:GetRecentErrors">

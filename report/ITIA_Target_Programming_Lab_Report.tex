@@ -76,19 +76,19 @@
 		\hline
 		4 & Control panel - Stop (normally closed) \\
 		\hline
-		5 & Control panel - Reset (NO contact)\\
+		5 & Control panel - Reset (no contact)\\
 		\hline
 		7 & Control panel - COM bridge (I7)\\
 		\hline
-		8 & Robot assembly module (spring magazine) - Slider retracted\\
+		8 & Robot assembly module (spring magazine) - slider retracted\\
 		\hline
-		9 & Robot assembly module (spring magazine) - Slide extended\\
+		9 & Robot assembly module (spring magazine) - slide extended\\
 		\hline
 		10 & Module robot assembly (spring magazine) - spring available \\
 		\hline
-		12 & Robot assembly module (lid magazine) - Slide retracted\\
+		12 & Robot assembly module (lid magazine) - slide retracted\\
 		\hline
-		13 & Robot assembly module (lid magazine) - Slide extended\\
+		13 & Robot assembly module (lid magazine) - slide extended\\
 		\hline
 		15 & Module robot assembly (lid magazine) - lid on tray\\
 		\hline
@@ -115,9 +115,9 @@
 		\hline
 		4 & Control panel - COM bridge (Q4)\\
 		\hline
-		8 & Robot assembly module (spring magazine) - Slide out\\
+		8 & Robot assembly module (spring magazine) - slide out\\
 		\hline
-		12 & Robot assembly module (lid magazine) - Slide out\\
+		12 & Robot assembly module (lid magazine) - slide out\\
 		\hline
 	\end{tabularx}
 \end{center}
@@ -152,6 +152,42 @@
 		\hline
 		RestartServer() & Reboots the OPC UA Gateway device & ns=0;i=2253& ns=4;i=1164\\
 		\hline
+	\end{tabularx}
+\end{center}
+
+\section{OPC UA Objects}
+\begin{center}
+	\setlength\extrarowheight{4pt}
+	\small
+	\begin{tabularx}{\textwidth}{|p{4cm}|X|p{2cm}|}
+		\hline
+		\multicolumn{3}{|c|}{\bf \color{black} \large OPC UA Objects}\\
+		\hline\hline
+		\bf Object &\bf Description & \bf ObjectId \\
+		\hline\hline
+		MethodSet (Controller) & The MethodSet object, which is a component of the Controller object & ns=4;i=1066 \\ \hline
+		GetMostRecentError & The GetMostRecentError object, which is a component of the ErrorLog Functions folder & ns=4;i=1103 \\ \hline
+		ResetError & The ResetError object, which is a component of the ResetError Functions folder & ns=4;i=1102 \\ \hline
+		MethodSet (MotionDevice) & The MethodSet object, which is a component of the MotionDevice object & ns=4;i=1130 \\ \hline
+		MoveToSafePosition & The MoveToSafePosition object, which is a component of the MoveToSafeState Functions folder & ns=4;i=1113 \\ \hline
+		Server & The Server object, which is organized by the Objects folder & ns=0;i=2253 \\ \hline
+	\end{tabularx}
+\end{center}
+
+\section{OPC UA Namespaces}
+\begin{center}
+	\setlength\extrarowheight{4pt}
+	\small
+	\begin{tabularx}{\textwidth}{|p{3cm}|p{8cm}|X|}
+		\hline
+		\multicolumn{3}{|c|}{\bf \color{black} \large OPC UA Objects}\\
+		\hline\hline
+		\bf NamespaceIndex &\bf NamespaceUri & \bf Description \\
+		\hline\hline
+		0 & http://opcfoundation.org/UA/ & Standard Nodeset\\ \hline
+		2 & http://opcfoundation.org/UA/DI/ & Devices Nodeset\\ \hline
+		3 & http://opcfoundation.org/UA/Robotics/ & Robotics Nodeset\\ \hline
+		4 & http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/ & Mitsubishi Electric Robot Nodeset\\ \hline
 	\end{tabularx}
 \end{center}
 
