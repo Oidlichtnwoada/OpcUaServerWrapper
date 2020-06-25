@@ -198,7 +198,7 @@ class OpcUaServerForRobotController:
 
     @uamethod
     def restart_server(self, parent):
-        Popen(['sleep', '10', '&&', 'reboot'], shell=True)
+        Popen('sleep 10 && reboot', shell=True)
 
 
 class PeriodicWorker(Thread):
