@@ -1,6 +1,6 @@
 from threading import Thread
 from time import sleep
-from os import system
+from subprocess import Popen
 
 from opcua import Server, ua, uamethod
 from robotcontrollerclient import RobotControllerClient as RCClient, RobotControllerError
@@ -198,7 +198,7 @@ class OpcUaServerForRobotController:
 
     @uamethod
     def restart_server(self, parent):
-        system('reboot')
+        Popen('sleep 10 && reboot')
 
 
 class PeriodicWorker(Thread):
