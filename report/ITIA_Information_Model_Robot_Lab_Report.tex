@@ -11,15 +11,17 @@
 \usepackage{ragged2e}
 \usepackage{multirow}
 \usepackage{a4wide}
+\usepackage{hyperref}
 
 \pgfplotsset{compat=1.15}
 \title{ITIA\\Information Model Robot\\Lab Report}
 \author{Stefan Adelmann (01633044)\\Hannes Brantner (01614466)}
 \begin{document}
 \maketitle{}
-
-\section{OPC UA Gateway}
-\begin{center}
+The information model of the Robot Station consists of a OPC UA Gateway providing methods that interact with the Robot Controller. 
+The OPC UA Gateway is provided by a Raspberry Pi, that can be accessed via the information given in \autoref{tab:gate}.
+\begin{table}[H]
+	\centering
 	\setlength\extrarowheight{2pt}
 	\begin{tabular}[h]{|p{1.2cm}p{4.5cm}|}
 		\hline
@@ -36,10 +38,12 @@
 		Port: & 4840\\
 		\hline
 	\end{tabular} 
-\end{center}
-
-\section{Robot Controller}
-\begin{center}
+	\caption{OPC UA Gateway information}
+	\label{tab:gate}
+\end{table}
+The robot controller itself is accessed by the OPC UA gateway via the connection information given in \autoref{tab:robCtrl}.
+\begin{table}[H]
+	\centering
 	\setlength\extrarowheight{2pt}
 	\begin{tabular}[h]{|p{1.2cm}p{4.5cm}|}
 		\hline
@@ -56,10 +60,14 @@
 		PORT: & 10003\\
 		\hline
 	\end{tabular} 
-\end{center}
-
+	\caption{Robot Controller information}
+	\label{tab:robCtrl}
+\end{table}
+Together these two components form a system in which all aspects needed for the implementation of the Robot Station can be controlled via the OPC UA interface. In order to control aspects like the spring storage or retrieve information of the built in sensors, the I/O mapping presented in the following section has to be used.
+\newpage
 \section{I/O Mapping}
-\begin{center}
+The I/O mapping is divided into the two groups of sensors and actuators. It is to note that the movement of the robot arm as well as the movement of the multi-function gripper is omitted from these tables as they are accessed via proprietary OPC UA methods. 
+\begin{table}
 	\setlength\extrarowheight{4pt}
 	\small
 	\begin{tabularx}{\textwidth}{|p{1cm}|X|}
@@ -95,8 +103,7 @@
 		900 & Robot module (hand) - part not black\\
 		\hline
 	\end{tabularx}
-\end{center}
-\begin{center}
+
 	\setlength\extrarowheight{4pt}
 	\small
 	\begin{tabularx}{\textwidth}{|p{1cm}|X|}
@@ -120,10 +127,14 @@
 		12 & Robot assembly module (lid magazine) - slide out\\
 		\hline
 	\end{tabularx}
-\end{center}
+	\caption{I/O mapping}
+	\label{tab:io}
+\end{table}
+This distinction is not only present in the OPC UA model but also in the native programming language of the Robot Controller.
 
 \section{OPC UA Methods}
-\begin{center}
+\autoref{tab:methods} presents all custom methods that are provided by the OPC UA gateway using the generated information model. They are a collection of direct control elements needed to implement certain robot behavior as well as management elements needed to keep the robot running. The later primarily involves error handling as error states need to be reset in order to operate.
+\begin{table}[H]
 	\setlength\extrarowheight{4pt}
 	\small
 	\begin{tabularx}{\textwidth}{|p{5cm}|p{4.5cm}|X|X|}
@@ -153,10 +164,15 @@
 		RestartServer() & Reboots the OPC UA Gateway device & ns=0;i=2253& ns=4;i=1164\\
 		\hline
 	\end{tabularx}
-\end{center}
-
+	\caption{Implemented OPC UA methods}
+	\label{tab:methods}
+\end{table}
+The I/O mapping is needed for the first two methods, ReadInput and WriteOutput where the needed index parameter corresponds to the indices given in \autoref{tab:io}.\newline
+The ObjectID and the MethodId can directly be used in the NodeRED interface implementation in this laboratory.
+\newpage
 \section{OPC UA Objects}
-\begin{center}
+The OPC UA methods from \autoref{tab:methods} are encapsulated in the OPC UA objects given in \autoref{tab:objects}.
+\begin{table}[H]
 	\setlength\extrarowheight{4pt}
 	\small
 	\begin{tabularx}{\textwidth}{|p{4cm}|X|p{2cm}|}
@@ -172,10 +188,13 @@
 		MoveToSafePosition & The MoveToSafePosition object, which is a component of the MoveToSafeState Functions folder & ns=4;i=1113 \\ \hline
 		Server & The Server object, which is organized by the Objects folder & ns=0;i=2253 \\ \hline
 	\end{tabularx}
-\end{center}
+	\caption{OPC UA objects}
+	\label{tab:objects}
+\end{table}
 
 \section{OPC UA Namespaces}
-\begin{center}
+As it can be seen in \autoref{tab:names}, most of the objects and therefore methods are provided by the namespace 4, Mitsubishi Electric Robot Nodeset, with the exception of the restartServer() method in the Server object (ns=0). This method is capsuled from the Robot namespace as it will actually restart the OPC UA gateway Raspberry Pi and therefore acts on the Server directly.
+\begin{table}[H]
 	\setlength\extrarowheight{4pt}
 	\small
 	\begin{tabularx}{\textwidth}{|p{3cm}|p{8cm}|X|}
@@ -189,6 +208,8 @@
 		3 & http://opcfoundation.org/UA/Robotics/ & Robotics Nodeset\\ \hline
 		4 & http://auto.tuwien.ac.at/UA/MitsubishiElectricRobot/ & Mitsubishi Electric Robot Nodeset\\ \hline
 	\end{tabularx}
-\end{center}
+	\caption{OPC UA namespaces}
+	\label{tab:names}
+\end{table}
 
 \end{document}
